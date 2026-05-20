@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Pinta</h1>
+        <button>Menú ▼</button>
+    </header>
+
+    <main class="main-content">
+
+        <section class="create-post">
+
+            <h1 class="section-title">Crear Post</h1>
+
+            <div class="post-author">
+
+                <img src="" alt="profile picture" class="author-avatar">
+
+                <span class="author-name">Nombre de usuario</span>
+
+            </div>
+
+            <hr class="divider">
+
+            <form class="post-form">
+
+                <input type="text" class="post-title" name="post-title" placeholder="Titulo" maxlength="300">
+
+                <span class="char-counter">0/300</span>
+
+                <label class="upload-box">
+
+                    <span class="upload-text">Subir imagen</span>
+
+                    <input type="file" class="post-image" name="post-image" accept="image/*">
+
+                </label>
+
+                <textarea class="post-content" name="post-content" placeholder="Descripcion del post"></textarea>
+
+                <input type="text" class="game-name" placeholder="Nombre del juego">
+
+                <input type="text" class="game-genre" placeholder="Género">
+
+                <button type="submit" class="submit-button">Crear Post</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p> <a href="privacy-policies.html">Políticas de privacidad</a> &bull; Pinta, Inc ⓒ. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
