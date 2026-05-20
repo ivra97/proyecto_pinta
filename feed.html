@@ -3,56 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pinta</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-   <header>
+    <!-- HEADER -->
+
+    <header class="main-header">
+
         <div class="header-left">
+
             <img src="" alt="Avatar perfil" class="profile-avatar">
+
             <span>Mi Perfil</span>
+
         </div>
+
         <h1>Pinta</h1>
-        <button>Menú ▼</button>
+
+        <button class="menu-btn">
+            Menú ▼
+        </button>
+
     </header>
+
+    <!-- BUSCADOR -->
 
     <section class="search-section">
 
         <div class="search-box">
+
             <input type="text" placeholder="Buscar...">
+
+            <button class="search-btn">
+                🔍
+            </button>
+
         </div>
 
     </section>
 
-    <main>
+    <!-- POSTS -->
 
-        <div class="post">
+    <main class="posts-container">
 
-            <div class="post-user">
-                <img src="img/user.jpg" alt="Usuario">
-                <h3>Nombre Usuario</h3>
+        <!-- POST -->
+
+        <article class="post">
+
+            <!-- HEADER DEL POST -->
+
+            <div class="post-header">
+
+                <div class="user-info">
+
+                    <img src="img/user.jpg" alt="Usuario">
+
+                    <h3>Nombre Usuario</h3>
+
+                </div>
+
+                <button class="follow-btn">
+                    Unirse/Seguir
+                </button>
+
             </div>
+
+            <!-- TITULO -->
+
+            <h2 class="post-title">
+                Título
+            </h2>
+
+            <!-- IMAGEN -->
 
             <div class="post-image">
+
                 <img src="img/post.jpg" alt="Publicación">
+
             </div>
 
-            <div class="post-info">
-                <div class="post-description">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
+            <!-- DESCRIPCION -->
+
+            <div class="post-description">
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+            </div>
+
+            <!-- FOOTER -->
+
+            <div class="post-footer">
+
+                <div class="game-name">
+                    Nombre del juego
                 </div>
+
                 <div class="post-reactions">
-                    <button>Me gusta </button>
-                    <button>Comentarios</button>
-                    <button>No me gusta</button>
+
+                    <button>👍 1</button>
+
+                    <button>👎 2</button>
+
+                    <button>😂 0</button>
+
                 </div>
+
             </div>
-            <div class="game-name">
-                <h3>Nombre del juego</h3>
+
+            <!-- SECCION COMENTARIOS -->
+
+            <div class="comments-section">
+
+                <h4>Comentarios</h4>
+
+                <!-- Comentarios futuros -->
+
             </div>
-        </div>
+
+        </article>
+
+        <!-- SEGUNDO POST -->
+
+        <article class="post">
+
+            <div class="post-header">
+
+                <div class="user-info">
+
+                    <img src="img/user.jpg" alt="Usuario">
+
+                    <h3>Nombre Usuario</h3>
+
+                </div>
+
+                <button class="follow-btn">
+                    Unirse/Seguir
+                </button>
+
+            </div>
+
+            <h2 class="post-title">
+                Otro título
+            </h2>
+
+            <div class="post-image">
+
+                <img src="img/post.jpg" alt="Publicación">
+
+            </div>
+
+            <div class="post-description">
+
+                <p>
+                    Otra publicación de ejemplo.
+                </p>
+
+            </div>
+
+            <div class="post-footer">
+
+                <div class="game-name">
+                    Nombre del juego
+                </div>
+
+                <div class="post-reactions">
+
+                    <button>👍 5</button>
+
+                    <button>👎 1</button>
+
+                    <button>😂 3</button>
+
+                </div>
+
+            </div>
+
+            <div class="comments-section">
+
+                <h4>Comentarios</h4>
+
+                <!-- Comentarios futuros -->
+
+            </div>
+
+        </article>
+
     </main>
+
+    <!-- PAGINACION -->
+
+    <section class="pagination">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="main-footer">
+
+        <p>
+            <a href="privacy-policies.html">
+                Políticas de privacidad
+            </a>
+
+            &bull;
+
+            Pinta, Inc ⓒ. Todos los derechos reservados
+        </p>
+
+    </footer>
+
 </body>
 </html>
