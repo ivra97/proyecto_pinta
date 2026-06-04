@@ -11,6 +11,8 @@ html {
 }
 
 body {
+    background: #0d0d0d;
+    color: white;
     font-family: 'Lato', sans-serif;
 }
 
@@ -51,4 +53,239 @@ p {
 
 .post-image {
     display: none;
+}
+
+/* Estilos para el perfil de búsqueda ivan */
+header {
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 30px;
+
+    background: 111;
+    border-bottom: 1px solid 333;
+}
+
+header h1{
+    color: #ff8c00;
+
+}
+
+ /*buscador*/
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+}
+
+.search-container input {
+    width: 400px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 25px 0 0 25px;
+
+    background: #1c1c1c;
+    color: white;
+}
+
+.search-container button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 0 25px 25px 0;
+
+    background: #ff8c00;
+    color: white;
+}
+
+/*layout*/
+.page-layout{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+
+}
+
+/*sidebar*/
+.sidebar {
+    background: #141414;
+    border-right: 1px solid #333;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar a{
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.5rem;
+}
+.sidebar-search{
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 25px;
+
+    background: #ff8c00;
+    color: white;
+
+    cursor: pointer;
+}
+.sidebar-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*contenido*/
+.main-content{
+    padding: 15px 30px 30px;
+}
+
+/*tabs*/
+.tabs{
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-bottom: 30px;
+}
+.tabs a{
+    color: #888;
+    text-decoration: none;
+
+    font-size: 1.5rem;
+}
+.tabs a.active{
+    color: #ff8c00;
+
+    border-bottom: 2px solid #ff8c00;
+
+    padding-bottom: 5px;
+}
+
+/*lista de personas*/
+.person-list{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*tarjetas*/
+.person-card{
+    display:flex;
+    align-items: center;
+
+    background: #181818;
+
+    padding: 20px;
+
+    border: 1px solid #2e2e2e;
+}
+.person-info{
+    flex: 1;
+    margin-left: 20px;
+}
+.person-info h3{
+    margin-bottom: 5px;
+}
+.person-info p{
+    color: #9e9e9e;
+}
+
+/*boton seguir*/
+.follow-btn{
+    background: none;
+
+    border: 2px solid #ff8c00;
+
+    color: #ff8c00;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;   
+}
+.follow-btn:hover{
+    background: #ff8c00;
+    color: black;
+}
+
+/*footer*/
+.main-footer{
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    border-top: 1px solid #333;
+}
+
+/*avatar*/
+.avatar{
+    width: 70px;
+    height: 70px;
+    
+    border-radius: 50%;
+
+    background: #444;
+}
+.profile-avatar{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #444;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*responsive*/
+@media (max-width: 768px) {
+
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+
+    .persona-card{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .persona-info{
+        margin-left: 0;
+    }
+
+    .search-container input {
+        width: 250px;
+    }
+    
+    .tabs {
+        flex-wrap: wrap;
+    }
 }
