@@ -1,46 +1,129 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy policy</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header-left">
-            <img src="" alt="Avatar perfil" class="profile-avatar">
-            <span>Mi Perfil</span>
-        </div>
-        <h1>Pinta</h1>
-        <button>Menú ▼</button>
-    </header>
-    <main>
-        <section class="bg-title1">
-            <h2>Información que recopilamos</h2>
-            <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
-        </section>
-        <section class="bg-title2">
-            <h2>Cómo usamos su información</h2>
-            <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
-        </section>
-        <section class="bg-title3">
-            <h2>Compartición de información con terceros</h2>
-            <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <p> <a href="privacy-policies.html">Políticas de privacidad</a> &bull; Pinta, Inc ⓒ 2026 <a href="https://opensource.org/license/MIT">MIT License</a> </p>
-    </footer>
+    <div class="grid-container">
+
+        <!-- HEADER -->
+        <header class="main-header">
+            <div class="space"></div>
+
+            <h2 class="pinta">PINTA</h2>
+
+            <div class="profile-logo">
+                <img src="img/profile-logo.png" alt="Profile logo" class="profile-logo-image">
+            </div>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <div class="asidebar">
+                <nav class="sidebar-nav">
+
+                    <div class="nav-top">
+                        <a href="feed.html" class="nav-item">Inicio</a>
+                        <a href="search-profiles.html" class="nav-item">Buscar Usuarios</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="nav-bottom">
+                        <a href="privacy-policy.html" class="nav-item active">Políticas de privacidad</a>
+                        <a href="#" class="nav-item">Cerrar sesión</a>
+                    </div>
+
+                </nav>
+            </div>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <div class="privacy-container">
+
+                <h2>Políticas de privacidad</h2>
+                <p class="updated">Actualizado el: 10 de mayo de 2026</p>
+
+                <div class="main-title">
+
+                    <section class="bg-title">
+                        <h2>1. Recopilación de Datos Personales</h2>
+                        <p>
+                            Especificamos qué datos se solicitan al registrarse: nombre de usuario, correo electrónico y fecha de nacimiento.
+                            También se generan datos automáticamente como dirección IP, historial de mensajes y rango dentro del foro.
+                            Se distingue entre información pública visible en el perfil e información privada.
+                        </p>
+                    </section>
+
+                    <section class="bg-title">
+                        <h2>2. Uso de la Información (Finalidad)</h2>
+                        <p>
+                            Los datos se utilizan para moderación de contenido, prevención de fraude o toxicidad, personalización de la experiencia,
+                            envío de notificaciones y análisis estadístico del tráfico del foro. No se emplean para fines no declarados.
+                        </p>
+                    </section>
+
+                    <section class="bg-title">
+                        <h2>3. Compartición de Datos con Terceros</h2>
+                        <p>
+                            Se aclara si los datos pueden compartirse con patrocinadores, servicios de publicidad, plataformas de login social
+                            como Discord o Steam, o herramientas de moderación. Todos los terceros deben cumplir normas de privacidad.
+                        </p>
+                    </section>
+
+                    <section class="bg-title">
+                        <h2>4. Protección de Menores</h2>
+                        <p>
+                            El servicio está destinado a usuarios mayores de 13 o 14 años según la región.
+                            Se incluye el cumplimiento de normativas como COPPA y RGPD, y mecanismos de consentimiento parental cuando sea necesario.
+                        </p>
+                    </section>
+
+                    <section class="bg-title">
+                        <h2>5. Cookies y Tecnologías de Rastreo</h2>
+                        <p>
+                            Se utilizan cookies para mantener la sesión iniciada, recordar preferencias de tema y recopilar analíticas.
+                            El usuario puede gestionar o rechazar cookies no esenciales desde la configuración del navegador o del sitio.
+                        </p>
+                    </section>
+
+                    <section class="bg-title">
+                        <h2>6. Seguridad de la Información</h2>
+                        <p>
+                            Se aplican medidas de seguridad para proteger los datos almacenados y evitar accesos no autorizados,
+                            pérdidas o modificaciones indebidas de la información.
+                        </p>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <p>
+                Pinta, Inc ⓒ 2026 •
+                <a href="https://opensource.org/license/MIT">MIT License</a>
+            </p>
+        </footer>
+
+    </div>
 </body>
 </html>
