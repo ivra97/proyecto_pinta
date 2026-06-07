@@ -55,6 +55,7 @@ p {
     display: none;
 }
 
+
 /* Estilos para el perfil de búsqueda ivan */
 header {
     height: 70px;
@@ -289,3 +290,6 @@ header h1{
         flex-wrap: wrap;
     }
 }
+
+/* Estilos para el footer */
+
