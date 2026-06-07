@@ -60,28 +60,29 @@ p {
 header {
     height: 70px;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    
+    gap: 20px;
+
     padding: 0 30px;
 
-    background: 111;
-    border-bottom: 1px solid 333;
+    background: #111;
+    border-bottom: 1px solid #333;
 }
 
 header h1{
     color: #ff8c00;
-
 }
 
- /*buscador*/
+/* buscador */
+
 .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    padding: 20px;
+    justify-self: center;
+    gap: 0;
 }
 
 .search-container input {
@@ -105,16 +106,22 @@ header h1{
     color: white;
 }
 
-/*layout*/
+/* layout */
+
 .page-layout{
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 220px 1fr;
     min-height: 100vh;
-
 }
 
-/*sidebar*/
-.sidebar {
+/* sidebar */
+
+.sidebar{
+    position: sticky;
+    top: 0;
+
+    height: 100vh;
+
     background: #141414;
     border-right: 1px solid #333;
 
@@ -123,7 +130,10 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    align-self: start;
 }
+
 .sidebar a{
     display: block;
 
@@ -134,11 +144,13 @@ header h1{
 
     font-size: 1.5rem;
 }
+
 .sidebar-search{
     width: 100%;
 
     padding: 12px;
 
+    border: none;
     border-radius: 25px;
 
     background: #ff8c00;
@@ -146,18 +158,21 @@ header h1{
 
     cursor: pointer;
 }
+
 .sidebar-bottom{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/*contenido*/
+/* contenido */
+
 .main-content{
-    padding: 15px 30px 30px;
+    padding: 30px;
 }
 
-/*tabs*/
+/* tabs */
+
 .tabs{
     display: flex;
     justify-content: center;
@@ -166,12 +181,14 @@ header h1{
 
     margin-bottom: 30px;
 }
+
 .tabs a{
     color: #888;
     text-decoration: none;
 
     font-size: 1.5rem;
 }
+
 .tabs a.active{
     color: #ff8c00;
 
@@ -180,116 +197,138 @@ header h1{
     padding-bottom: 5px;
 }
 
-/*lista de personas*/
+/* lista de personas */
+
 .person-list{
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-/*tarjetas*/
+/* tarjetas */
+
 .person-card{
     display:flex;
-    align-items: center;
+    align-items:center;
+    justify-content:space-between;
 
-    background: #181818;
+    background:#181818;
 
-    padding: 20px;
+    padding:20px;
 
-    border: 1px solid #2e2e2e;
-}
-.person-info{
-    flex: 1;
-    margin-left: 20px;
-}
-.person-info h3{
-    margin-bottom: 5px;
-}
-.person-info p{
-    color: #9e9e9e;
+    border:1px solid #2e2e2e;
 }
 
-/*boton seguir*/
-.follow-btn{
-    background: none;
+/* avatar */
 
-    border: 2px solid #ff8c00;
-
-    color: #ff8c00;
-
-    padding: 10px 25px;
-
-    cursor: pointer;
-
-    transition: 0.3s;   
-}
-.follow-btn:hover{
-    background: #ff8c00;
-    color: black;
-}
-
-/*footer*/
-.main-footer{
-    text-align: center;
-    padding: 15px;
-    background: #111;
-    border-top: 1px solid #333;
-}
-
-/*avatar*/
 .avatar{
-    width: 70px;
-    height: 70px;
+    width:70px;
+    height:70px;
     
-    border-radius: 50%;
+    border-radius:50%;
 
-    background: #444;
+    background:#444;
 }
+
+.person-info{
+    flex:1;
+    margin-left:20px;
+}
+
+.person-info h3{
+    margin-bottom:5px;
+}
+
+.person-info p{
+    color:#9e9e9e;
+}
+
+/* boton seguir */
+
+.follow-btn{
+    background:none;
+
+    border:2px solid #ff8c00;
+
+    color:#ff8c00;
+
+    padding:10px 25px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.follow-btn:hover{
+    background:#ff8c00;
+    color:black;
+}
+
+/* footer */
+
+.main-footer{
+    text-align:center;
+    padding:15px;
+
+    background:#111;
+    border-top:1px solid #333;
+}
+
+/* avatar header */
+
 .profile-avatar{
-    width: 40px;
-    height: 40px;
+    width:40px;
+    height:40px;
 
-    border-radius: 50%;
+    border-radius:50%;
 
-    background: #444;
-}
-.header-left{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    background:#444;
 }
 
-
-/*responsive*/
-@media (max-width: 768px) {
-
-    .page-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        border-right: none;
-        border-bottom: 1px solid #333;
-    }
-
-    .persona-card{
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .persona-info{
-        margin-left: 0;
-    }
-
-    .search-container input {
-        width: 250px;
-    }
-    
-    .tabs {
-        flex-wrap: wrap;
-    }
+.header-left,
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
+/* responsive */
+
+@media (max-width: 768px){
+
+    .page-layout{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:relative;
+        height:auto;
+
+        border-right:none;
+        border-bottom:1px solid #333;
+    }
+
+    .person-card{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .person-info{
+        margin-left:0;
+    }
+
+    .search-container input{
+        width:250px;
+    }
+
+    .tabs{
+        flex-wrap:wrap;
+    }
+}
 /* Estilos para el footer */
-
