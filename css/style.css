@@ -13,30 +13,18 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: #000;
     min-height: 100vh;
-
     overflow: hidden;
 }
+
+/* ================= TIPOGRAFÍA ================= */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-h1 { font-size: 3rem; }
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
 p {
     font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-aside,
-.main-header,
-.main-footer {
-    overflow: hidden;
+    line-height: 1.6;
 }
 
 /* ================= GRID ================= */
@@ -59,8 +47,9 @@ aside,
 .main-header {
     grid-area: header;
 
+    position: relative;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     padding: 0 2rem;
@@ -69,13 +58,26 @@ aside,
     border-bottom: 1px solid #303030;
 }
 
+/* LOGO CENTRADO REAL */
 .pinta {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
     font-size: 2.8rem;
-    font-weight: bold;
+    font-weight: 800;
     color: #FF8C00;
+    letter-spacing: 1px;
+}
+
+.page-title,
+.back-arrow {
+    display: none;
 }
 
 .profile-logo {
+    margin-left: auto;
+
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -101,6 +103,14 @@ aside {
     border-right: 1px solid #303030;
     padding: 2rem;
 }
+.sidebar-nav hr {
+    margin: 3rem 0 2rem;
+    height: 1px;
+    border: none;
+    background: #303030;
+    opacity: 0.8;
+    width: 100%;
+}
 
 .sidebar-nav {
     height: 100%;
@@ -117,12 +127,6 @@ aside {
 
 .nav-bottom {
     margin-top: auto;
-}
-
-.sidebar-nav hr {
-    margin: 2rem 0;
-    border: none;
-    border-top: 1px solid #303030;
 }
 
 .nav-item {
@@ -143,9 +147,7 @@ aside {
 .active {
     background: #FF8C00;
     color: #000;
-    font-weight: bold;
 }
-
 
 /* ================= MAIN ================= */
 
@@ -155,52 +157,84 @@ aside {
     background: #000;
     color: #fff;
 
-    padding: 2rem;
-
+    padding: 3rem;
     overflow-y: auto;
-    height: 100%; 
+    height: 100%;
 }
 
-.main-content > h2 {
-    margin-bottom: 0.5rem;
-}
-
-.main-content > p {
-    color: #B0B0B0;
-    margin-bottom: 2rem;
-}
-
-.main-title {
-    background: #1A1A1A;
-    padding: 2.5rem;
-    border-radius: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.bg-title h2 {
-    color: #FF8C00;
-    margin-bottom: 1rem;
-}
-
-.bg-title p {
-    color: #E0E0E0;
-}
+/* CONTENEDOR TIPO DOCUMENTO */
 .privacy-container {
     background: #1A1A1A;
-    padding: 2.5rem;
+    padding: 3.5rem;
     border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+
+    max-width: 95rem;
+    margin: 0 auto;
 }
 
+/* TÍTULO PRINCIPAL */
+.privacy-container > h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+/* FECHA */
 .updated {
     color: #B0B0B0;
+    font-size: 1.4rem;
 }
+
+/* SECCIONES */
+.main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.bg-title h2 {
+    color: #FF8C00;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.bg-title p {
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+/* ================= BOTÓN ================= */
+
+.accept-btn {
+    width: 90%;
+    max-width: 40rem;
+
+    margin: 2rem auto 0 auto;
+
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+
+    background: #FF8C00;
+    color: #000;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.accept-btn:hover {
+    transform: scale(1.02);
+}
+
 /* ================= FOOTER ================= */
 
 .main-footer {
@@ -217,8 +251,8 @@ aside {
 .main-footer p,
 .main-footer a {
     color: #fff;
-    text-decoration: none;
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -227,30 +261,48 @@ aside {
 
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 7rem auto 1fr 5rem;
+        grid-template-rows: 7rem 1fr;
 
         grid-template-areas:
             "header"
-            "sidebar"
-            "main"
-            "footer";
+            "main";
     }
 
-    .asidebar {
-        border-right: none;
-        border-bottom: 1px solid #303030;
+    aside,
+    .main-footer,
+    .pinta,
+    .profile-logo {
+        display: none;
     }
 
-    .nav-top,
-    .nav-bottom {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .main-header {
         justify-content: center;
+        padding: 0 1.5rem;
     }
 
-    .nav-item {
-        flex: 1;
-        min-width: 12rem;
+    .back-arrow {
+        display: block;
+        position: absolute;
+        left: 1.5rem;
+
+        font-size: 2.2rem;
+        color: #fff;
+    }
+
+    .page-title {
+        display: block;
+        font-size: 1.6rem;
+        color: #FF8C00;
         text-align: center;
+    }
+
+    .main-content {
+        height: calc(100vh - 7rem);
+        padding: 2rem;
+    }
+
+    .privacy-container {
+        border-radius: 0;
+        padding: 2.5rem;
     }
 }
