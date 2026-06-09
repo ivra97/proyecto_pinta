@@ -27,7 +27,7 @@ p {
     line-height: 1.6;
 }
 
-/* ================= GRID ================= */
+/*  GRID  */
 
 .grid-container {
     height: 100vh;
@@ -42,7 +42,7 @@ p {
         "footer footer";
 }
 
-/* ================= HEADER ================= */
+/*HEADER */
 
 .main-header {
     grid-area: header;
@@ -58,7 +58,7 @@ p {
     border-bottom: 1px solid #303030;
 }
 
-/* LOGO CENTRADO REAL */
+/* Pinta */
 .pinta {
     position: absolute;
     left: 50%;
@@ -91,7 +91,7 @@ p {
     object-fit: cover;
 }
 
-/* ================= SIDEBAR ================= */
+/* SIDEBAR  */
 
 aside {
     grid-area: sidebar;
@@ -110,7 +110,7 @@ aside {
     background: #303030;
     opacity: 0.8;
     width: 100%;
-}
+} 
 
 .sidebar-nav {
     height: 100%;
@@ -149,7 +149,7 @@ aside {
     color: #000;
 }
 
-/* ================= MAIN ================= */
+/*  MAIN */
 
 .main-content {
     grid-area: main;
@@ -162,7 +162,7 @@ aside {
     height: 100%;
 }
 
-/* CONTENEDOR TIPO DOCUMENTO */
+
 .privacy-container {
     background: #1A1A1A;
     padding: 3.5rem;
@@ -176,20 +176,20 @@ aside {
     margin: 0 auto;
 }
 
-/* TÍTULO PRINCIPAL */
+/* Title  */
 .privacy-container > h2 {
     font-size: 2.6rem;
     font-weight: 800;
     color: #fff;
 }
 
-/* FECHA */
+/* Datetime */
 .updated {
     color: #B0B0B0;
     font-size: 1.4rem;
 }
 
-/* SECCIONES */
+/* Seccions */
 .main-title {
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@ aside {
     line-height: 1.7;
 }
 
-/* ================= BOTÓN ================= */
+/*  Button  */
 
 .accept-btn {
     width: 90%;
@@ -235,7 +235,7 @@ aside {
     transform: scale(1.02);
 }
 
-/* ================= FOOTER ================= */
+/*  FOOTER  */
 
 .main-footer {
     grid-area: footer;
@@ -255,8 +255,8 @@ aside {
     text-decoration: none;
 }
 
-/* ================= RESPONSIVE ================= */
-
+/*  RESPONSIVE  */
+/*  RESPONSIVE privacy  */
 @media (max-width: 768px) {
 
     .grid-container {
