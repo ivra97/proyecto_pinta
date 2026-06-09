@@ -12,38 +12,62 @@
     <title>Pinta</title>
     <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/logo.pinta11.png" type="image/x-icon" />
-
-
+    <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-     <body>
-    <div class="feed-grid">
-        <header>
-            <h1 class="title" >PINTA</h1>   
-            <!-- BUSCADOR -->
-             <div class="search-post">
+    <div class="grid">
+        <header >
+            <h1 class="title-header" >PINTA</h1>   
+            
+            <div class="search-header">
                 <input type="text" placeholder="Buscar..." />
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <a href="profile.html" class="profile-link">
+            
+            <a href="profile.html" class="profile">
                 <img src="img/avatar.pinta1111.png" alt="Avatar perfil" />
             </a>
         </header>
-
-      <!-- POSTS -->
+  
         <aside>
-            <nav class="navbar">
-                <div class="nav-top">
-                    <a href="feed.html" class="inicio"><i class="fa-regular fa-house"></i>Inicio</a>
-                    <a href="search-profile.html" class="buscar-usuario"><i class="fa-solid fa-magnifying-glass-plus"></i>Buscar Usuarios</a>
-                    <a href="create-post.html" class="crear-post"><i class="fa-solid fa-circle-plus"></i>Crear Post</a>
+            <nav class="navbar-aside">
+                <div class="nav-top-aside">
+                    <a href="feed.html">
+                        <i class="fa-regular fa-house"></i>
+                        <span class="desktop-text-aside">Inicio</span>
+                        <span class="mobile-text-aside">Inicio</span>
+                    </a>
+
+                    <a href="search-profile.html">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span class="desktop-text-aside">Buscar Usuarios</span>
+                        <span class="mobile-text-aside">Buscar</span>
+                    </a>
                 </div>
-                <div class="nav-bottom">
-                    <a href="privacy-policy.html" class="politica-uso"><i class="fa-regular fa-file-lines"></i>Política de uso</a>
-                    <a href="" class="cerrar-sesion"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+                <div class="mobile-only-aside">
+                    <a href="profile.html" class="profile profile-mobile">
+                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil">
+                        <span class="mobile-text-aside">Perfil</span>
+                    </a>
                 </div>
+
+                <div class="nav-bottom-aside">
+                    <a href="privacy-policy.html">
+                         <i class="fa-regular fa-file-lines"></i>
+                         <span class="desktop-text-aside">Política de uso</span>
+                         <span class="mobile-text-aside">Política</span>
+                    </a>
+                    <a href="#">
+                         <i class="fa-solid fa-right-from-bracket"></i>
+                         <span class="desktop-text-aside">Cerrar sesión</span>
+                         <span class="mobile-text-aside">Salir</span>
+                    </a>
+                </div>
+                
            </nav>
-        </aside> 
+        </aside>
+     
         <main class="main-content">
             <nav class="tabs">
                 <a href="#" class="active">Todos</a>
@@ -51,21 +75,17 @@
                 <a href="#">Seguidores</a>
                 <a href="#">Usuarios</a>
             </nav>
-    
-
-    
-
-        <div class="person-list">
+            <div class="person-list">
             <!-- Fila 1 -->
-            <div class="person-card">
-                <img src="img/avatar.pinta1111.png" alt="Avatar" class="avatar">
-                <div class="person-info">
-                    <h3>Persona</h3>
-                    <p>Descripción de la persona</p>
+                <div class="person-card">
+                    <img src="img/avatar.pinta1111.png" alt="Avatar" class="avatar">
+                    <div class="person-info">
+                        <h3>Persona</h3>
+                        <p>Descripción de la persona</p>
+                    </div>
+                    <button class="follow-btn">Seguir</button>
                 </div>
-                <button class="follow-btn">
-                    Seguir</button>
-            </div>
+            
             <div class="person-card">
                 <img src="img/avatar.pinta1111.png" alt="Avatar" class="avatar">
                 <div class="person-info">
@@ -197,15 +217,12 @@
                 <button class="follow-btn">
                     Seguir</button>
             </div>
-        </div>
         </main>
-    <!-- Footer -->
+
         <footer>
             <p>
                 <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
             </p>
         </footer>
-    </div>
-
 </body>
 </html>

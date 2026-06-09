@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pinta</title>
@@ -8,39 +8,66 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
-  </head>
+</head>
 
-  <body>
-    <div class="feed-grid">
-        <header>
-            <h1 class="title" >PINTA</h1>   
-            <!-- BUSCADOR -->
-             <div class="search-post">
+<body>
+    <div class="grid">
+        <header >
+            <h1 class="title-header" >PINTA</h1>   
+            
+            <div class="search-header">
                 <input type="text" placeholder="Buscar..." />
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <a href="profile.html" class="profile-link">
+            
+            <a href="profile.html" class="profile">
                 <img src="img/avatar.pinta1111.png" alt="Avatar perfil" />
             </a>
         </header>
-
-      <!-- POSTS -->
+  
         <aside>
-            <nav class="navbar">
-                <div class="nav-top">
-                    <a href="feed.html" class="inicio"><i class="fa-regular fa-house"></i>Inicio</a>
-                    <a href="search-profile.html" class="buscar-usuario"><i class="fa-solid fa-magnifying-glass-plus"></i>Buscar Usuarios</a>
-                    <a href="create-post.html" class="crear-post"><i class="fa-solid fa-circle-plus"></i>Crear Post</a>
+            <nav class="navbar-aside">
+                <div class="nav-top-aside">
+                    <a href="feed.html">
+                        <i class="fa-regular fa-house"></i>
+                        <span class="desktop-text-aside">Inicio</span>
+                        <span class="mobile-text-aside">Inicio</span>
+                    </a>
+
+                    <a href="search-profile.html">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span class="desktop-text-aside">Buscar Usuarios</span>
+                        <span class="mobile-text-aside">Buscar</span>
+                    </a>
+                    <a href="create-post.html">
+                        <i class="fa-solid fa-circle-plus"></i>
+                       <span class="desktop-text-aside">Crear Post</span>
+                       <span class="mobile-text-aside">Crear</span>
+                    </a>
                 </div>
-                <div class="nav-bottom">
-                    <a href="privacy-policy.html" class="politica-uso"><i class="fa-regular fa-file-lines"></i>Política de uso</a>
-                    <a href="" class="cerrar-sesion"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+                <div class="mobile-only-aside">
+                    <a href="profile.html" class="profile profile-mobile">
+                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil">
+                        <span class="mobile-text-aside">Perfil</span>
+                    </a>
                 </div>
+
+                <div class="nav-bottom-aside">
+                    <a href="privacy-policy.html">
+                         <i class="fa-regular fa-file-lines"></i>
+                         <span class="desktop-text-aside">Política de uso</span>
+                         <span class="mobile-text-aside">Política</span>
+                    </a>
+                    <a href="#">
+                         <i class="fa-solid fa-right-from-bracket"></i>
+                         <span class="desktop-text-aside">Cerrar sesión</span>
+                         <span class="mobile-text-aside">Salir</span>
+                    </a>
+                </div>
+                
            </nav>
         </aside> 
 
@@ -50,8 +77,7 @@
                 <button class="siguiendo">Siguiendo</button>
             </div>
 
-            <article class="post">
-                <!-- HEADER DEL POST -->
+            <article class="post-feed">
                 <div class="post-user">
                     <div class="post-user-left">
                         <img src="img/avatar.pinta1111.png" alt="imagen de Usuario" />
@@ -74,12 +100,75 @@
                 </div>
     
                 <div class="post-footer">
-                    <div class="post-reactions">
-                        <button>👍 1</button>
-                        <button>👎 2</button>
-                        <button>💬 4 comentarios</button>
-                        <h4>Mobile lenges</h4>
-                    </div>         
+                    <div class="post-footer-reactions">
+                         <button><i class="fa-solid fa-thumbs-up"></i> 1</button>
+                        <button><i class="fa-solid fa-thumbs-down"></i> 2</button>
+                        <button><i class="fa-solid fa-comment"></i> 4 comentarios</button>
+                    </div>
+                <h4 class="game-name">Mobile Legends</h4>
+            </article>
+
+            <article class="post-feed">
+                <div class="post-user">
+                    <div class="post-user-left">
+                        <img src="img/avatar.pinta1111.png" alt="imagen de Usuario" />
+                        <h2>Abdias</h2>
+                    </div>
+                    <div class="post-user-right">
+                        <button class="follow-btn">Seguir</button>
+                        <div class="dropdown"><i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-card">
+                    <!-- TITULO -->
+                    <h2>Nueva skin gratis</h2>
+                    <!-- Descripcion-->
+                    <p>vieron la nueva skin que salio en mobile lenges</p>
+                    <!-- IMAGEN -->
+                    <img src="img/placeholder-img.png" alt="Publicación" />
+                </div>
+    
+                <div class="post-footer">
+                    <div class="post-footer-reactions">
+                         <button><i class="fa-solid fa-thumbs-up"></i> 1</button>
+                        <button><i class="fa-solid fa-thumbs-down"></i> 2</button>
+                        <button><i class="fa-solid fa-comment"></i> 4 comentarios</button>
+                    </div>
+                <h4 class="game-name">Mobile Legends</h4>
+                </div>
+            </article>
+
+            <article class="post-feed">
+                <div class="post-user">
+                    <div class="post-user-left">
+                        <img src="img/avatar.pinta1111.png" alt="imagen de Usuario" />
+                        <h2>Abdias</h2>
+                    </div>
+                    <div class="post-user-right">
+                        <button class="follow-btn">Seguir</button>
+                        <div class="dropdown"><i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-card">
+                    <!-- TITULO -->
+                    <h2>Nueva skin gratis</h2>
+                    <!-- Descripcion-->
+                    <p>vieron la nueva skin que salio en mobile lenges</p>
+                    <!-- IMAGEN -->
+                    <img src="img/placeholder-img.png" alt="Publicación" />
+                </div>
+    
+                <div class="post-footer">
+                    <div class="post-footer-reactions">
+                         <button><i class="fa-solid fa-thumbs-up"></i> 1</button>
+                        <button><i class="fa-solid fa-thumbs-down"></i> 2</button>
+                        <button><i class="fa-solid fa-comment"></i> 4 comentarios</button>
+                    </div>
+                <h4 class="game-name">Mobile Legends</h4>
                 </div>
             </article>
         </main>
@@ -90,5 +179,5 @@
             </p>
         </footer>
     </div>
-  </body>
+</body>
 </html>

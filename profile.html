@@ -4,62 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class = "header-left">
-            <img src="" alt="Avatar perfil" class="profile-avatar">
-            <span>Mi perfil</span>
-        </div>
-        <h1>Pinta</h1>
-        <button>Menù</button>
-    </header>
-    <main>
-        <section class="perfil">
-            <div class="perfil-izq">
-                <div class="img-perfil">
-                    foto de perfil
+     <div class="grid">
+        <header class="title-header-center">
+            <h1 class="title-header" >PINTA</h1>       
+        </header>
+
+        <aside>
+            <nav class="navbar-aside">
+                <div class="nav-top-aside">
+                    <a href="feed.html">
+                        <i class="fa-regular fa-house"></i>
+                        <span class="desktop-text-aside">Inicio</span>
+                        <span class="mobile-text-aside">Inicio</span>
+                    </a>
+
+                    <a href="search-profile.html">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span class="desktop-text-aside">Buscar Usuarios</span>
+                        <span class="mobile-text-aside">Buscar</span>
+                    </a>
                 </div>
+                <div class="mobile-only-aside">
+                    <a href="profile.html" class="profile profile-mobile">
+                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil">
+                        <span class="mobile-text-aside">Perfil</span>
+                    </a>
+                </div>
+
+                <div class="nav-bottom-aside">
+                    <a href="privacy-policy.html">
+                         <i class="fa-regular fa-file-lines"></i>
+                         <span class="desktop-text-aside">Política de uso</span>
+                         <span class="mobile-text-aside">Política</span>
+                    </a>
+                    <a href="#">
+                         <i class="fa-solid fa-right-from-bracket"></i>
+                         <span class="desktop-text-aside">Cerrar sesión</span>
+                         <span class="mobile-text-aside">Salir</span>
+                    </a>
+                </div>
+                
+           </nav>
+        </aside>
+        
+        <main>
+            <section class="perfil">
+                <div class="perfil-izq">
+                    <div class="img-perfil">
+                        foto de perfil
+                    </div>
                 <div class="perfil-info">
                     <h2>Nombre de Usuario</h2>
                     <p>descripcion del usuario</p>
 
                 </div>
-            </div>
-            <div class="perfil-num">
-                <p>posts</p>
+                <div class="perfil-num">
+                    <p>posts</p>
                 <p>seguidores x</p>
-
-            </div>
-        </section>
-        <section class="crear-post">
-            <button>crear post</button>
-        </section>
-        <section class="post">
-            <div class="encabezado">
-                <div>
-                    <h3>Nombre de Usuario</h3>
-                    <p>titulo</p>
+               </div>
+            </section>
+            <section class="crear-post">
+                <button>crear post</button>
+            </section>
+            <section class="post">
+                <div class="encabezado">
+                    <div>
+                        <h3>Nombre de Usuario</h3>
+                        <p>titulo</p>
+                    </div>
+                    <button>seguir</button>
                 </div>
-                <button>seguir</button>
-            </div>
-            <div class="post-img">
-                <p>contenido del post</p>
-            </div>
-            <div class="post-descripcion">
-                descripcion
-            </div>
-            <div class="post-reacciones">
-                <span>me gusta</span>
-                <span>comentarios</span>
-                <span>emogis</span>
-            </div>
-            <div class="post-comentarios">
-                <h3>Comentarios</h3>
-                <div class="comentario">
-                    <p>Nombre de Usuario</p>
-                    <p>comentario del usuario</p>
+                <div class="post-img">
+                    <p>contenido del post</p>
                 </div>
+                    <div class="post-descripcion">
+                     descripcion
+                </div>
+                <div class="post-reacciones">
+                    <span>me gusta</span>
+                    <span>comentarios</span>
+                    <span>emogis</span>
+                </div>
+                <div class="post-comentarios">
+                    <h3>Comentarios</h3>
+                    <div class="comentario">
+                        <p>Nombre de Usuario</p>
+                        <p>comentario del usuario</p>
+                    </div>
                 <div class="comentario">
                     <p>Nombre de Usuario</p>
                     <p>comentario del usuario</p>
@@ -69,14 +109,15 @@
                     <p>comentario del usuario</p>
                 </div>
                 
-            </div>
-        </section>
+                </div>
+            </section>
+        </main>
 
-    </main>
-    
-    <footer class="main-footer">
-        <p> <a href="privacy-policies.html">Políticas de privacidad</a> &bull; Pinta, Inc ⓒ 2026 <a href="https://opensource.org/license/MIT">MIT License</a> </p>
-    </footer>
+        <footer>
+            <p>
+                <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
+            </p>
+        </footer>  
     
 </body>
 </html>
