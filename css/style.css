@@ -11,6 +11,8 @@ html {
 }
 
 body {
+    background: black;
+    color: white;
     font-family: 'Lato', sans-serif;
 }
 
@@ -48,9 +50,530 @@ p {
     text-align: center;
     cursor: pointer;
 }
+/*quitamos los efectos de estilos de la imagen de perfil , boton  */
+.profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
 
-.post-image {
+/*grid structure for feed , search-profile , profile , create-post , privacy-policy*/
+.grid {
+    width: 100%;
+    height: 100vh;   
+    display:grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows:8% 3fr 6%;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 0.2rem;
+    background-color: #2b2b2b;
+}
+/*header*/
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: black;
+}
+.title-header-center{
+    justify-content: center;
+}
+#header-privacy-policy{
+    justify-content: space-between;
+    padding-left: 64rem;
+
+}
+.title-header {
+    color:orange;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.search-header {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2b2b2b;
+    border-radius: 25px;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    margin-left: 14rem;
+}
+.search-header input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    width: 250px;;
+}
+.search-header input::placeholder {
+    color: white;
+}
+.search-header button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*aside*/
+aside {
+    grid-area: sidebar;
+    background-color: #2b2b2b;
+    display: flex;
+}
+.navbar-aside{
+    height: 100%;
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+.navbar-aside a {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0.6rem;
+    border-radius: 10px;
+    gap: 0.7rem;
+}
+.navbar-aside a:hover {
+    background-color: orange;
+}
+.nav-top-aside ,.nav-bottom-aside {
+    flex-direction:column ;
+    display: flex;
+}
+.mobile-text-aside , .mobile-only-aside{
     display: none;
 }
 
-/* Estilos para el footer */
+/*main*/
+main {
+    grid-area: main;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+/*footer*/
+footer {
+    grid-area: footer;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*feed content abdias*/
+.feed-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;  
+}
+
+.feed-header button {
+    width: 200px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 3px solid #2d2b2b;
+}
+
+.feed-header button:hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+.post-feed{
+    width: 60%;
+    background-color: #2b2b2b;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.post-user{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    justify-content:space-between;    
+    border-bottom : 2px solid white;
+
+}
+.post-user-left{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.post-user-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+}
+.post-user-left img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.post-user-right button{
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.4rem 2rem;
+    font-size: 1.5rem;
+}
+.dropdown {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.post-card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.8rem;
+}
+
+.post-card img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.post-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.post-footer-reactions{
+    display: flex;
+    gap: 1rem;
+}
+
+.post-footer-reactions button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.game-name{
+    font-size: 1.5rem;
+    color: #ccc;
+    
+}
+
+/* responsive feed-abdias*/
+@media screen and (max-width: 480px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 1fr 6rem;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside";
+    }
+    footer{
+        display: none;
+    }
+
+    /* Header */
+    .title-header{
+        font-size: 2rem;
+        margin-left: 15rem;
+        padding: 1rem 0;
+    }
+
+    .search-header{
+        width: auto;
+        margin-left: 0;
+        background: transparent;
+    }
+
+    .search-header input{
+        display: none;
+    }
+
+    .profile{
+        display: none;
+    }
+
+    /* Feed */
+    .feed-header{
+        width: 95%;
+        padding: 2rem 0;
+    }
+
+    .feed-header button{
+        width: 10rem;
+        font-size: 1.5em;
+    }
+
+    .post-feed{
+        width: 85%;
+        padding:1rem 0.5rem;
+    }
+
+    .post-user-left img{
+        width: 4rem;
+    }
+
+    .post-user-left{
+        font-size: 1.2rem;
+    }
+
+    .post-user-right button{
+        font-size: 1.2rem;
+        padding: .4rem 1rem;
+    }
+
+    .post-card h2{
+        font-size: 1.4rem;
+    }
+
+    .post-card p{
+        font-size: 1.2rem;
+    }
+
+    
+    aside{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #2b2b2b;
+        z-index: 1000;
+    }
+
+    .navbar-aside{
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+
+    .nav-top-aside,
+    .nav-bottom-aside, .profile-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.3rem;
+        justify-content: center;
+        flex: 1;
+    }
+    
+
+    .profile-mobile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .profile-mobile a {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        justify-content: center;
+    }
+
+    .profile-mobile .mobile-text {
+        font-size: 1.2rem;
+    }
+
+    .navbar a{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        gap: 0.2rem;
+    }
+    .desktop-text , .nav-bottom{
+        display: none;
+    }
+    .mobile-text {
+        display: inline;
+    }
+    
+    .cerrar-sesion{
+        display: none;
+    }
+
+}
+
+
+
+
+
+/* Estilos para el perfil de búsqueda ivan */
+.main-content{
+    padding: 30px;
+}
+
+/* tabs */
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.tabs a{
+    color: #888;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.tabs a.active{
+    color: #ff8c00;
+
+    border-bottom: 2px solid #ff8c00;
+
+    padding-bottom: 5px;
+}
+
+/* lista de personas */
+
+.person-list{
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* tarjetas */
+
+.person-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    background:#181818;
+
+    padding:20px;
+
+    border:1px solid #2e2e2e;
+}
+
+/* avatar */
+
+.avatar{
+    width:70px;
+    height:70px;
+    
+    border-radius:50%;
+
+    background:#444;
+}
+
+.person-info{
+    flex:1;
+    margin-left:20px;
+}
+
+.person-info h3{
+    margin-bottom:5px;
+}
+
+.person-info p{
+    color:#9e9e9e;
+}
+
+/* boton seguir */
+
+.follow-btn{
+    background:none;
+
+    border:2px solid #ff8c00;
+
+    color:#ff8c00;
+
+    padding:10px 25px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.follow-btn:hover{
+    background:#ff8c00;
+    color:black;
+}
+
+/* footer */
+
+.main-footer{
+    text-align:center;
+    padding:15px;
+
+    background:#111;
+    border-top:1px solid #333;
+}
+
+/* avatar header */
+
+.profile-avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#444;
+}
+
+.header-left,
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* responsive */
+
+/*login de dani*/
+.flex-login{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-login{
+    flex: 1;
+}

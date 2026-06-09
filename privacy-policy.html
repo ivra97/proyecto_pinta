@@ -11,36 +11,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.pinta11.png" type="image/x-icon">
 
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <img src="" alt="Avatar perfil" class="profile-avatar">
-            <span>Mi Perfil</span>
-        </div>
-        <h1>Pinta</h1>
-        <button>Menú ▼</button>
-    </header>
-    <main>
-        <section class="bg-title1">
-            <h2>Información que recopilamos</h2>
-            <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
-        </section>
-        <section class="bg-title2">
-            <h2>Cómo usamos su información</h2>
-            <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
-        </section>
-        <section class="bg-title3">
-            <h2>Compartición de información con terceros</h2>
-            <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <p> <a href="privacy-policies.html">Políticas de privacidad</a> &bull; Pinta, Inc ⓒ 2026 <a href="https://opensource.org/license/MIT">MIT License</a> </p>
-    </footer>
+    <div class="grid">
+        <header id="header-privacy-policy" >
+            <h1 class="title-header" >PINTA</h1>   
+            
+            <a href="profile.html" class="profile">
+                <img src="img/avatar.pinta1111.png" alt="Avatar perfil" />
+            </a>
+        </header>
+  
+        <aside>
+            <nav class="navbar-aside">
+                <div class="nav-top-aside">
+                    <a href="feed.html">
+                        <i class="fa-regular fa-house"></i>
+                        <span class="desktop-text-aside">Inicio</span>
+                        <span class="mobile-text-aside">Inicio</span>
+                    </a>
+
+                    <a href="search-profile.html">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span class="desktop-text-aside">Buscar Usuarios</span>
+                        <span class="mobile-text-aside">Buscar</span>
+                    </a>
+                </div>
+                <div class="mobile-only-aside">
+                    <a href="profile.html" class="profile profile-mobile">
+                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil">
+                        <span class="mobile-text-aside">Perfil</span>
+                    </a>
+                </div>
+
+                <div class="nav-bottom-aside">
+                    <a href="privacy-policy.html">
+                         <i class="fa-regular fa-file-lines"></i>
+                         <span class="desktop-text-aside">Política de uso</span>
+                         <span class="mobile-text-aside">Política</span>
+                    </a>
+                    <a href="#">
+                         <i class="fa-solid fa-right-from-bracket"></i>
+                         <span class="desktop-text-aside">Cerrar sesión</span>
+                         <span class="mobile-text-aside">Salir</span>
+                    </a>
+                </div>
+                
+           </nav>
+        </aside> 
+   
+        <main>
+            <section class="bg-title1">
+                <h2>Información que recopilamos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
+            </section>
+            <section class="bg-title2">
+                <h2>Cómo usamos su información</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
+            </section>
+            <section class="bg-title3">
+                <h2>Compartición de información con terceros</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta consectetur natus! Iure excepturi asperiores nesciunt quam laudantium. Doloribus nemo fugit ut beatae distinctio tempore placeat modi amet sapiente quod.</p>
+            </section>
+        </main>
+         <footer>
+            <p>
+                <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
+            </p>
+        </footer>   
 </body>
 </html>
