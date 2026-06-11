@@ -567,13 +567,56 @@ footer a {
 
 /* responsive */
 
-/*login de dani*/
+/*-------------------estilos login de dani--------------------------------------------------------*/
+/* Estructura general del login */
 .flex-login{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-height: 100vh;
 }
-
+/* Contenedor principal del login */
 .main-login{
-    flex: 1;
+    width: 35vw;
+    height: 80vh;
+    background-color: #2b2b2b;
+    border:#ccc solid 2px;
+}   
+/* tamaño y posicionamiento del logo */
+.logo-login{
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    height: 50%;
+}
+/* tamaño y color de texto de bienvenida */
+.welcome-title{
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+}
+/* estructura del formulario de login */
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+.content-register-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.content-register-2{
+    text-align: center;
+    margin-top: 1rem;
+}
+.content-register-3{
+    color: #ff8c00;
+}
+.content-register-3:hover{
+    color: black;
 }
