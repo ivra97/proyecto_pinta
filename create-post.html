@@ -1,66 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Post</title>
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-
-    
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinta - Crear Publicacion</title>
+    <link rel="icon" href="img/logo.pinta11.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="grid-container">
+        <header class="main-header">
+            <h1 class="title-header">PINTA</h1>
 
-<div class="grid-container">
+            <div class="search-header">
+                <input type="text" placeholder="Buscar..." />
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
 
-    <header class="main-header">
+            <a href="profile.html" class="profile">
+                <img src="img/avatar.pinta1111.png" alt="Avatar perfil" />
+            </a>
+        </header>
 
-        <h2 class="pinta">PINTA</h2>
+        <aside class="asidebar">
+            <nav class="navbar-aside sidebar-nav">
+                <div class="nav-top-aside nav-top">
+                    <a href="feed.html">
+                        <i class="fa-regular fa-house"></i>
+                        <span class="desktop-text-aside">Inicio</span>
+                        <span class="mobile-text-aside">Inicio</span>
+                    </a>
 
+                    <a href="search-profile.html">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span class="desktop-text-aside">Buscar Usuarios</span>
+                        <span class="mobile-text-aside">Buscar</span>
+                    </a>
 
-    </header>
+                    <a href="create-post.html" class="active">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span class="desktop-text-aside">Crear Post</span>
+                        <span class="mobile-text-aside">Crear</span>
+                    </a>
+                </div>
 
-    <aside>
-        <div class="asidebar">
-            <nav class="sidebar-nav">
-
-                <div class="nav-top">
-                    <a href="feed.html" class="nav-item">Inicio</a>
-                    <a href="search-profiles.html" class="nav-item">Buscar Usuarios</a>
+                <div class="mobile-only-aside">
+                    <a href="profile.html" class="profile profile-mobile">
+                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil" />
+                        <span class="mobile-text-aside">Perfil</span>
+                    </a>
                 </div>
 
                 <hr>
 
-                <div class="nav-bottom">
-                    <a href="privacy-policy.html" class="nav-item active">Políticas de privacidad</a>
-                    <a href="#" class="nav-item">Cerrar sesión</a>
+                <div class="nav-bottom-aside nav-bottom">
+                    <a href="privacy-policy.html">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span class="desktop-text-aside">Politica de uso</span>
+                        <span class="mobile-text-aside">Politica</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="desktop-text-aside">Cerrar sesion</span>
+                        <span class="mobile-text-aside">Salir</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="create-post-container">
+                <div class="create-post-header">
+                    <a href="feed.html" class="back-button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+
+                    <h2>Crear Publicacion</h2>
                 </div>
 
-            </nav>
-        </div>
-    </aside>
+                <form class="create-post-form">
+                    <div class="form-group">
+                        <label for="title">Titulo</label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            maxlength="50"
+                            placeholder="Ingrese un titulo"
+                            required>
+                    </div>
 
-    <main class="main-content">
-        <div class="false-title">
-            <div class="arrow-back">←</div>
-            <div class="post-title">Crear publicación</div>
-    
-        </div>
+                    <div class="form-group">
+                        <label for="image">Imagen</label>
+                        <input
+                            type="file"
+                            id="image"
+                            name="image"
+                            accept="image/*">
+                    </div>
 
-    </main>
+                    <div class="form-group">
+                        <label for="description">Descripcion</label>
+                        <textarea
+                            id="description"
+                            name="description"
+                            maxlength="500"
+                            rows="6"
+                            placeholder="Ingrese una descripcion"
+                            required></textarea>
+                    </div>
 
-    <footer class="main-footer">
-        <p>Pinta, Inc ⓒ 2026 • <a href="https://opensource.org/license/MIT">MIT License</a></p>
-    </footer>
+                    <div class="form-group">
+                        <label for="game-name">Nombre del juego</label>
+                        <input
+                            type="text"
+                            id="game-name"
+                            name="game-name"
+                            maxlength="50"
+                            placeholder="Ingrese el nombre del juego"
+                            required>
+                    </div>
 
-</div>
+                    <button type="submit" class="publish-button">
+                        Publicar
+                    </button>
+                </form>
+            </div>
+        </main>
 
+        <footer class="main-footer">
+            <p>
+                <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
