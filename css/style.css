@@ -581,6 +581,7 @@ footer a {
     width: 35vw;
     height: 80vh;
     background-color: #2b2b2b;
+    border-radius: 2px;
     border:#ccc solid 2px;
 }   
 /* tamaño y posicionamiento del logo */
