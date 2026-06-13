@@ -70,6 +70,7 @@ a {
     border-bottom: 1px solid #303030;
 }
 
+
 /* Pinta */
 .pinta {
     position: absolute;
@@ -303,7 +304,96 @@ aside {
 }
 /*   create post   */
 
+.create-post-header {
+    background: #000000;
+    border-bottom: 1px solid #303030;
+    width: calc(100% + 6rem);
+    margin-left: -3rem;
+    margin-top: -3rem;
 
+    height: 5rem;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button-header {
+    position: absolute;
+    left: 2rem;
+}
+
+.create-post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.create-post-form .form-group  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    width: 50rem;
+}
+.create-post-form label
+{
+    font-size: 3rem;
+    color: #fff;
+    
+    
+}
+.create-post-form input,
+.create-post-form textarea {
+    width: 100%;
+    height: 7rem;
+
+    background: #000000;
+    border: 0.3rem solid #b9b9b9;
+    color: #b9b9b9;
+
+    padding: 0  1rem;
+    
+}
+
+.create-post-form textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+#image-upload {
+    border: 0.3rem solid #b9b9b9;
+    color: #b9b9b9;
+    padding: 1rem;
+}
+.main-header--create-post {
+    justify-content: center;
+    padding-left: 25rem;
+}
+
+.publish-button {
+    background-color: #ff8c00;
+    color: #000;
+    border: 0.3rem solid #b9b9b9;
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 0.5rem;
+    width: 30rem;
+
+    transition: transform 0.15s ease;
+
+}
+.publish-button:hover {
+    transform: translateY(-2px);
+}
+.publish-button:active {
+    transform: translateY(0);
+}
 /*  MEDIA QUERIES  */
 
 /*  RESPONSIVE  */
