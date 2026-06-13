@@ -3,44 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.pinta11.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net.npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
-    <main>
-        <section class="register">
-            <div class="incon">
-                icono
-            </div>
-            <h2>Registrarse</h2>
-            <form>
-                <input type="text" placeholder="Nombre de Usuario">
-                <input type="email" placeholder="Correo Electronico">
-                <input type="password" placeholder="Contraseña">
-                <input type="password" placeholder="Confirmar Contraseña">
-                <button type="submit">
-                    registrarse
-                </button>
 
-            </form>
-            <div class="login">
-                <p>¿Ya tienes una cuenta?</p>
-                <a href="login.html">Iniciar sesión</a>
-            </div>
-        </section>
-        <section class="carta-privacidad">
-            <p>
-                para continuar acepta nuestras
-                <a href="politica-privacidad">politicas de privacidad</a>
-                y confirmas que lo leiste.
-            </p>
+    <main class=" "container-fluid register-page>
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="coll-11 col-sm-8 col-md-6 col-lg-4">
+                <section class="register-card">
+                    <!--Logito-->
+                    <div class="text-center mb-4">
+                        <img src="img/logo.pinta11.png" alt="logo" class="logo-register">
+                    </div>
 
-        </section>
+                    <!--Title-->
+                    <h2 class="text-center register-title">
+                        Crear Cuenta
+                    </h2>
+                    <!--Form-->
+                    <form>
+                        <!--User-->
+                        <div class="input-group mb-3">
+
+                            <div class="imput-group-prepend">
+                                <span clas="input-group-text">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre De Usuario">
+                        </div>
+                        <!--Mail-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                            
+                            <input type="email" class="form-control" placeholder="Correo Electrònico">
+                        </div>
+                        <!--Password-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-depend">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Contraceña">
+                        </div>
+                        <!--Repeat Password-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Repetir Contraseña">
+                        </div>
+                        <!--Check-->
+                        <div class=""form-check mb-4>
+                            <input type="form-check-input" type="checkbox" id="privacidad">
+                            <label class="form-check-label" for="privacidad">
+                                Acepto todas las
+                                <a href="#">
+                                    Polìticas de Privacidad
+                                </a>
+                            </label>
+                        </div>
+                        <!--Botton-->
+                        <button type="submit" class="btn btn-registrer btn-block">
+                            Registrarse
+                        </button>
+
+                    </form>
+                    <!--Login-->
+                    <div class="text-center login-link">
+                        <p>Ya tienes cuenta?</p>
+                        <a href="login.html">
+                            Iniciar Sesiòn
+                        </a>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
     </main>
-    
+
     <footer class="main-footer">
-        <p> <a href="privacy-policies.html">Políticas de privacidad</a> &bull; Pinta, Inc ⓒ 2026 <a href="https://opensource.org/license/MIT">MIT License</a> </p>
-    </footer>
+        <p>
+            <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
+        </p>
+    </footer>  
     
 </body>
 </html>
