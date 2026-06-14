@@ -440,6 +440,8 @@ footer a {
 
 
 
+
+
 /* Estilos para el perfil de búsqueda ivan */
 .main-content{
     padding: 30px;
@@ -566,6 +568,33 @@ footer a {
 }
 
 /* responsive */
+@media screen and (max-width: 480px){
+    .tabs{
+        gap:20px;
+    }
+
+    .tabs a{
+        font-size:1.2rem;
+    }
+
+    .person-card{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .follow-btn{
+        align-self:flex-end;
+    }
+    
+}
+
+
+
+
+
+
+
 
 /*login de dani*/
 .flex-login{
@@ -577,3 +606,6 @@ footer a {
 .main-login{
     flex: 1;
 }
+
+
+/* falta hacer cosas */
