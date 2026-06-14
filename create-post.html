@@ -1,27 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Post</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/logo.pinta11.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinta - Crear Publicacion</title>
+    <link rel="icon" href="img/logo.pinta11.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="grid">
-        <header class="title-header-center">
-            <h1 class="title-header" >PINTA</h1>   
+    <div class="grid-container">
+        <header class="main-header  main-header--create-post">
+            <h1 class="title-header">PINTA</h1>
         </header>
-  
-        <aside>
-            <nav class="navbar-aside">
-                <div class="nav-top-aside">
+
+        <aside class="asidebar">
+            <nav class="navbar-aside sidebar-nav">
+                <div class="nav-top-aside nav-top">
                     <a href="feed.html">
                         <i class="fa-regular fa-house"></i>
                         <span class="desktop-text-aside">Inicio</span>
@@ -33,66 +32,99 @@
                         <span class="desktop-text-aside">Buscar Usuarios</span>
                         <span class="mobile-text-aside">Buscar</span>
                     </a>
+
+                    <a href="create-post.html" class="active">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span class="desktop-text-aside">Crear Post</span>
+                        <span class="mobile-text-aside">Crear</span>
+                    </a>
                 </div>
+
                 <div class="mobile-only-aside">
                     <a href="profile.html" class="profile profile-mobile">
-                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil">
+                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil" />
                         <span class="mobile-text-aside">Perfil</span>
                     </a>
                 </div>
 
-                <div class="nav-bottom-aside">
+                <hr>
+
+                <div class="nav-bottom-aside nav-bottom">
                     <a href="privacy-policy.html">
-                         <i class="fa-regular fa-file-lines"></i>
-                         <span class="desktop-text-aside">Política de uso</span>
-                         <span class="mobile-text-aside">Política</span>
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span class="desktop-text-aside">Politica de uso</span>
+                        <span class="mobile-text-aside">Politica</span>
                     </a>
                     <a href="#">
-                         <i class="fa-solid fa-right-from-bracket"></i>
-                         <span class="desktop-text-aside">Cerrar sesión</span>
-                         <span class="mobile-text-aside">Salir</span>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="desktop-text-aside">Cerrar sesion</span>
+                        <span class="mobile-text-aside">Salir</span>
                     </a>
                 </div>
-                
-           </nav>
-        </aside> 
+            </nav>
+        </aside>
 
-        <main>
-            <section class="create-post">
-                <h1 class="section-title">Crear Post</h1>
-                <div class="post-author">
-                    <img src="" alt="profile picture" class="author-avatar">
-                    <span class="author-name">Nombre de usuario</span>
-               </div>
-               <hr class="divider">
-               <form class="post-form">
+        <main class="main-content">
+            <div class="create-post-container">
+                <div class="create-post-header">
+                    <a href="profile.html" class="back-button-header">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
 
-                <input type="text" class="post-title" name="post-title" placeholder="Titulo" maxlength="300">
+                    <h2>Crear Publicacion</h2>
+                </div>
 
-                <span class="char-counter">0/300</span>
+                <form class="create-post-form">
+                    <div class="form-group">
+                        <label for="title">Titulo</label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            maxlength="50"
+                            placeholder="Ingrese un titulo"
+                            required>
+                    </div>
 
-                <label class="upload-box">
+                    <div class="form-group">
+                        <label for="image">Imagen</label>
+                        <input
+                            type="file"
+                            id="image-upload"
+                            name="image"
+                            accept="image/*">
+                    </div>
 
-                    <span class="upload-text">Subir imagen</span>
+                    <div class="form-group">
+                        <label for="description">Descripcion</label>
+                        <textarea
+                            id="description"
+                            name="description"
+                            maxlength="500"
+                            rows="6"
+                            placeholder="Ingrese una descripcion"
+                            required></textarea>
+                    </div>
 
-                    <input type="file" class="post-image" name="post-image" accept="image/*">
+                    <div class="form-group">
+                        <label for="game-name">Nombre del juego</label>
+                        <input
+                            type="text"
+                            id="game-name"
+                            name="game-name"
+                            maxlength="50"
+                            placeholder="Ingrese el nombre del juego"
+                            required>
+                    </div>
 
-                </label>
-
-                <textarea class="post-content" name="post-content" placeholder="Descripcion del post"></textarea>
-
-                <input type="text" class="game-name" placeholder="Nombre del juego">
-
-                <input type="text" class="game-genre" placeholder="Género">
-
-                <button type="submit" class="submit-button">Crear Post</button>
-
+                    <button type="submit" class="publish-button">
+                        Publicar
+                    </button>
                 </form>
-
-            </section>      
+            </div>
         </main>
 
-        <footer>
+        <footer class="main-footer">
             <p>
                 <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
             </p>
