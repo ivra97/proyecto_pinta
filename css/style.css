@@ -592,7 +592,8 @@ footer a {
     width: 35%;
     height: 50%;
 }
-.welcome-section{
+/* estructura de la sección de bienvenida */
+.welcome-section{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,6 +613,7 @@ footer a {
     gap: 2rem;
     padding: 2rem 2rem;
 }
+/* estructura de contenido de registro */
 .content-register-1{
     display: flex;
     flex-direction: column;
@@ -619,20 +621,39 @@ footer a {
     gap: 0.5rem;
     font-size: 1.5rem;
 }
+/* color del enlace de registro */
 .colour.register{
     color: #ff8c00;
     text-decoration-color: #ff8c00;
 }
+/* tamaño de la línea divisoria */
+.line-size{
+    width: 50%;
+    height: 2px;
+    margin: 1rem auto;
+}
+/* efecto hover del enlace de registro */
 .colour.register:hover{
     color: black;
 }
+/* estructura del contenido de política de privacidad */
 .content-register-2{
     text-align: center;
     margin-top: 1rem;
+    padding: 1rem;
 }
+/* color del enlace de política de privacidad */
 .content-register-3{
     color: #ff8c00;
 }
+/* efecto hover del enlace de política de privacidad */
 .content-register-3:hover{
     color: black;
+}
+/* responsive para pantallas menores a 786px, ajustando el tamaño del contenedor principal del login */
+@media screen and (max-width: 786px){
+    .main-login{
+        width: 90%;
+        height: auto;
+    }
 }
