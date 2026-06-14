@@ -14,14 +14,14 @@
     <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     <div class="grid">
-        <header class="title-header-center">
+    <div class="grid-container">
+        <header class="title-header-center main-header">
             <h1 class="title-header" >PINTA</h1>       
         </header>
 
-        <aside>
-            <nav class="navbar-aside">
-                <div class="nav-top-aside">
+        <aside class="asidebar">
+            <nav class="navbar-aside sidebar-nav">
+                <div class="nav-top-aside nav-top">
                     <a href="feed.html">
                         <i class="fa-regular fa-house"></i>
                         <span class="desktop-text-aside">Inicio</span>
@@ -41,7 +41,9 @@
                     </a>
                 </div>
 
-                <div class="nav-bottom-aside">
+                <hr>
+
+                <div class="nav-bottom-aside nav-bottom">
                     <a href="privacy-policy.html">
                          <i class="fa-regular fa-file-lines"></i>
                          <span class="desktop-text-aside">Política de uso</span>
@@ -56,65 +58,98 @@
                 
            </nav>
         </aside>
-        
-        <main>
-            <section class="perfil">
-                <div class="perfil-izq">
-                    <div class="img-perfil">
-                        foto de perfil
+        <main class="main-content">
+
+            <!-- HEADER PERFIL -->
+            <section class="perfil-header">
+
+                <div class="banner">
+                    <img src="img/placeholder-img.png" alt="">
+                </div>
+
+                <div class="perfil-info-container">
+
+                    <div class="perfil-avatar">
+                        <img src="img/avatar.pinta1111.png" alt="">
                     </div>
-                <div class="perfil-info">
-                    <h2>Nombre de Usuario</h2>
-                    <p>descripcion del usuario</p>
+
+                    <div class="perfil-datos">
+                        <h2>Miguel el Anashe</h2>
+
+                        <p class="descripcion">
+                            Descripción Descripción Descripción Descripción
+                            Descripción Descripción
+                        </p>
+
+                        <div class="perfil-extra">
+                            <p><i class="fa-solid fa-location-dot"></i> Argentina</p>
+                            <p><i class="fa-solid fa-calendar"></i> Se unió en mayo 2010</p>
+                        </div>
+
+                        <div class="estadisticas">
+
+                            <div>
+                                <h3>30</h3>
+                                <p>Publicaciones</p>
+                            </div>
+
+                            <div>
+                                <h3>400</h3>
+                                <p>Seguidores</p>
+                            </div>
+
+                            <div>
+                                <h3>50</h3>
+                                <p>Siguiendo</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="perfil-botones">
+                        <button>Crear post</button>
+                        <button>Editar perfil</button>
+                    </div>
 
                 </div>
-                <div class="perfil-num">
-                    <p>posts</p>
-                <p>seguidores x</p>
-               </div>
+
             </section>
-            <section class="crear-post">
-                <button>crear post</button>
-            </section>
-            <section class="post">
-                <div class="encabezado">
-                    <div>
-                        <h3>Nombre de Usuario</h3>
-                        <p>titulo</p>
+
+            <!-- POST De Ema-->
+            <article class="post-feed">
+                <div class="post-user">
+                    <div class="post-user-left">
+                        <img src="img/avatar.pinta1111.png" alt="imagen de Usuario" />
+                        <h2>Miguel el Anashe</h2>
                     </div>
-                    <button>seguir</button>
-                </div>
-                <div class="post-img">
-                    <p>contenido del post</p>
-                </div>
-                    <div class="post-descripcion">
-                     descripcion
-                </div>
-                <div class="post-reacciones">
-                    <span>me gusta</span>
-                    <span>comentarios</span>
-                    <span>emogis</span>
-                </div>
-                <div class="post-comentarios">
-                    <h3>Comentarios</h3>
-                    <div class="comentario">
-                        <p>Nombre de Usuario</p>
-                        <p>comentario del usuario</p>
+                    <div class="post-user-right">
+                        <button class="follow-btn">Seguir</button>
+                        <div class="dropdown"><i class="fa-solid fa-bars"></i>
+                        </div>
                     </div>
-                <div class="comentario">
-                    <p>Nombre de Usuario</p>
-                    <p>comentario del usuario</p>
-                </div>
-                <div class="comentario">
-                    <p>Nombre de Usuario</p>
-                    <p>comentario del usuario</p>
                 </div>
                 
+                <div class="post-card">
+                    <!-- TITULO -->
+                    <h2>Reventando Botcitos en el lol</h2>
+                    <!-- Descripcion-->
+                    <p>Aguante graves!!Aguante graves!!Aguante graves!!Aguante graves!</p>
+                    <!-- IMAGEN -->
+                    <img src="img/placeholder-img.png" alt="Publicación" />
                 </div>
-            </section>
+    
+                <div class="post-footer">
+                    <div class="post-footer-reactions">
+                         <button><i class="fa-solid fa-thumbs-up"></i> 1</button>
+                        <button><i class="fa-solid fa-thumbs-down"></i> 2</button>
+                        <button><i class="fa-solid fa-comment"></i> 4 comentarios</button>
+                    </div>
+                <h4 class="game-name">League of Legends</h4>
+            </article>
+
         </main>
 
-        <footer>
+        <footer class="main-footer">
             <p>
                 <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
             </p>
