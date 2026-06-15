@@ -751,28 +751,17 @@ aside {
     }
 }
 
-<<<<<<< HEAD
 
 
-
-
-
-
-/* Estilos para el perfil de búsqueda ivan */
-.main-content{
-    padding: 30px;
-}
-
-/* tabs */
-.tabs{
-=======
 /* buscar usuarios */
+.back-btn {
+    display: none;
+}
 .tabs {
->>>>>>> developers
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-bottom: 30px;
+    gap: 4rem;
+    margin-bottom: 3rem;
 }
 
 .tabs a {
@@ -783,17 +772,18 @@ aside {
 
 .tabs a.active {
     color: #ff8c00;
-    border-bottom: 2px solid #ff8c00;
-    padding-bottom: 5px;
+    background: transparent; /*para tapar lo del naranja por ahora*/
+    border-bottom: 0.2rem solid #ff8c00;
+    padding-bottom: 0.5rem;
 }
 
 .person-list {
     width: 90%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .person-card {
@@ -801,24 +791,24 @@ aside {
     align-items: center;
     justify-content: space-between;
     background: #181818;
-    padding: 20px;
-    border: 1px solid #2e2e2e;
+    padding: 1rem ;
+    border: 0.1rem solid #2e2e2e;
 }
 
 .avatar {
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     background: #444;
 }
 
 .person-info {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .person-info h3 {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .person-info p {
@@ -827,9 +817,9 @@ aside {
 
 .follow-btn {
     background: none;
-    border: 2px solid #ff8c00;
+    border: 0.2rem solid #ff8c00;
     color: #ff8c00;
-    padding: 10px 25px;
+    padding: 1rem 2.5rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -839,10 +829,9 @@ aside {
     color: black;
 }
 
-/* avatar header */
 .profile-avatar {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     background: #444;
 }
@@ -851,45 +840,14 @@ aside {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-<<<<<<< HEAD
-/* responsive */
-@media screen and (max-width: 480px){
-    .tabs{
-        gap:20px;
-    }
-
-    .tabs a{
-        font-size:1.2rem;
-    }
-
-    .person-card{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:15px;
-    }
-
-    .follow-btn{
-        align-self:flex-end;
-    }
-    
+    gap: 1rem;
 }
 
 
 
 
-
-
-
-
-/*login de dani*/
-.flex-login{
-=======
 /* login */
 .flex-login {
->>>>>>> developers
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -899,10 +857,6 @@ aside {
     flex: 1;
 }
 
-<<<<<<< HEAD
-
-/* falta hacer cosas */
-=======
 /* Css de Ema : Profile*/
 
 body{
@@ -971,7 +925,7 @@ body{
     top: 20px;
 
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .perfil-botones button{
@@ -1096,4 +1050,170 @@ body{
     font-weight: bold;
 }
 
->>>>>>> developers
+/* media query search profile */
+@media (max-width: 768px) {
+
+  .asidebar {
+    display: none;
+  }
+
+  .main-header.main-header-search {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+  }
+
+  
+  .back-btn {
+    display: block;
+
+    color: white;
+    font-size: 2rem;
+
+    text-decoration: none;
+  }
+
+  
+  .profile {
+    display: none;
+  }
+
+  
+  .title-header {
+    font-size: 0;
+
+    flex: 1;
+    text-align: center;
+
+    margin: 0;
+  }
+
+  .title-header::after {
+    content: "Buscar Usuarios";
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #ff8c00;
+
+    white-space: nowrap;
+  }
+
+  
+  .search-header {
+    order: 4;
+
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 4rem;
+    margin-bottom: 2.75rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+    background: #1c1c1c;
+    border: 1px solid #444;
+    border-radius: 25px;
+    padding: 0.2rem;
+  }
+
+  .search-header input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 0.9rem 1rem;
+
+    border: none;
+    border-radius: 25px 0 0 25px;
+
+    background: transparent;
+    color: white;
+    width: auto;
+  }
+
+  .search-header button {
+    flex-shrink: 0;
+    padding: 0.9rem 1rem;
+
+    border: none;
+    border-radius: 0 25px 25px 0;
+
+    background: transparent;
+    color: #aaa;
+
+    cursor: pointer;
+  }
+
+  
+  .tabs {
+    display: none;
+  }
+
+  
+  .main-content {
+    width: 100%;
+    margin: 0;
+    padding: 3.5rem 1rem 1rem;
+  }
+
+  
+  .person-list {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .person-card {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+  }
+
+  .avatar {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+  }
+
+  .person-info {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .person-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .person-info p {
+    font-size: 1.1rem;
+  }
+
+  .follow-btn {
+    width: auto;
+    min-width: 90px;
+
+    padding: 0.6rem 1rem;
+
+    margin-left: auto;
+  }
+
+  .main-footer {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+} 
+
+  
