@@ -453,12 +453,374 @@ aside {
 .publish-button:active {
     transform: translateY(0);
 }
+/*  MEDIA QUERIES  */
+
+/*  RESPONSIVE  */
+/*  RESPONSIVE privacy  */
+@media (max-width: 768px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7rem 1fr;
+
+        grid-template-areas:
+            "header"
+            "main";
+    }
+
+    aside,
+    .main-footer,
+    .pinta,
+    .profile-logo {
+        display: none;
+    }
+
+    .main-header {
+        justify-content: center;
+        padding: 0 1.5rem;
+    }
+
+    .back-arrow {
+        display: block;
+        position: absolute;
+        left: 1.5rem;
+
+        font-size: 2.2rem;
+        color: #fff;
+    }
+
+    .page-title {
+        display: block;
+        font-size: 1.6rem;
+        color: #FF8C00;
+        text-align: center;
+    }
+
+    .main-content {
+        height: calc(100vh - 7rem);
+        padding: 2rem;
+    }
+
+    .privacy-container {
+        border-radius: 0;
+        padding: 2.5rem;
+    }
+}
+
+.title-header-center {
+    justify-content: center;
+}
+
+#header-privacy-policy {
+    justify-content: space-between;
+    padding-left: 64rem;
+}
+
+.title-header {
+    color: orange;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.search-header {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2b2b2b;
+    border-radius: 25px;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    margin-left: 0;
+}
+
+.search-header input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    width: 250px;
+}
+
+.search-header input::placeholder {
+    color: white;
+}
+
+.search-header button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* feed content */
+.feed-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+.feed-header button {
+    width: 200px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 3px solid #2d2b2b;
+}
+
+.feed-header button:hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+.post-feed {
+    width: 60%;
+    background-color: #2b2b2b;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-user {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+.post-user-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.post-user-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+}
+
+.post-user-left img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.post-user-right button {
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.4rem 2rem;
+    font-size: 1.5rem;
+}
+
+.dropdown {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.post-card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.8rem;
+}
+
+.post-card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.post-footer-reactions {
+    display: flex;
+    gap: 1rem;
+}
+
+.post-footer-reactions button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.game-name {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/* responsive feed */
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 6rem;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside";
+    }
+
+    .title-header {
+        font-size: 2rem;
+        margin-left: 15rem;
+        padding: 1rem 0;
+    }
+
+    .search-header {
+        width: auto;
+        margin-left: 0;
+        background: transparent;
+    }
+
+    .search-header input {
+        display: none;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .feed-header {
+        width: 95%;
+        padding: 2rem 0;
+    }
+
+    .feed-header button {
+        width: 10rem;
+        font-size: 1.5em;
+    }
+
+    .post-feed {
+        width: 85%;
+        padding: 1rem 0.5rem;
+    }
+
+    .post-user-left img {
+        width: 4rem;
+    }
+
+    .post-user-left {
+        font-size: 1.2rem;
+    }
+
+    .post-user-right button {
+        font-size: 1.2rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .post-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .post-card p {
+        font-size: 1.2rem;
+    }
+
+    aside {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #2b2b2b;
+        z-index: 1000;
+    }
+
+    .navbar-aside {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+
+    .nav-top-aside,
+    .nav-bottom-aside,
+    .profile-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.3rem;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .profile-mobile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .profile-mobile a {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        justify-content: center;
+    }
+
+    .profile-mobile .mobile-text {
+        font-size: 1.2rem;
+    }
+
+    .navbar a {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        gap: 0.2rem;
+    }
+
+    .desktop-text,
+    .nav-bottom {
+        display: none;
+    }
+
+    .mobile-text {
+        display: inline;
+    }
+
+    .cerrar-sesion {
+        display: none;
+    }
+}
+
+
+
 /* buscar usuarios */
+.back-btn {
+    display: none;
+}
 .tabs {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-bottom: 30px;
+    gap: 4rem;
+    margin-bottom: 3rem;
 }
 
 .tabs a {
@@ -469,17 +831,18 @@ aside {
 
 .tabs a.active {
     color: #ff8c00;
-    border-bottom: 2px solid #ff8c00;
-    padding-bottom: 5px;
+    background: transparent; /*para tapar lo del naranja por ahora*/
+    border-bottom: 0.2rem solid #ff8c00;
+    padding-bottom: 0.5rem;
 }
 
 .person-list {
     width: 90%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .person-card {
@@ -487,24 +850,24 @@ aside {
     align-items: center;
     justify-content: space-between;
     background: #181818;
-    padding: 20px;
-    border: 1px solid #2e2e2e;
+    padding: 1rem ;
+    border: 0.1rem solid #2e2e2e;
 }
 
 .avatar {
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     background: #444;
 }
 
 .person-info {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .person-info h3 {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .person-info p {
@@ -513,9 +876,9 @@ aside {
 
 .follow-btn {
     background: none;
-    border: 2px solid #ff8c00;
+    border: 0.2rem solid #ff8c00;
     color: #ff8c00;
-    padding: 10px 25px;
+    padding: 1rem 2.5rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -525,10 +888,9 @@ aside {
     color: black;
 }
 
-/* avatar header */
 .profile-avatar {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     background: #444;
 }
@@ -537,7 +899,30 @@ aside {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+}
+
+
+
+
+/* login */
+.flex-login {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-login {
+    flex: 1;
+}
+
+/* Css de Ema : Profile*/
+
+body{
+    margin :0;
+    background-color: black;
+    color: white;
+    font-family:"Lato", sans-serif;
 }
 
 .perfil-header{
@@ -599,7 +984,7 @@ aside {
     top: 20px;
 
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .perfil-botones button{
@@ -718,219 +1103,127 @@ aside {
     font-weight: bold;
 }
 
-
-
-/*-------------------estilos login de dani--------------------------------------------------------*/
-/* Estructura general del login */
-.flex-login{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-}
-/* Contenedor principal del login */
-.main-login{
-    width: 35%;
-    height: 50%;
-    background-color: #2b2b2b;
-    border-radius: 2px;
-    border:#ccc solid 2px;
-}   
-/* tamaño y posicionamiento del logo */
-.logo-login{
-    display: block;
-    margin: auto;
-    padding: 0;
-    width: 35%;
-    height: 50%;
-}
-/* estructura de la sección de bienvenida */
-.welcome-section{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-}
-
-/* tamaño y color de texto de bienvenida */
-.welcome-title{
-    text-align: center;
-    color: orange;
-    font-size: 40px;
-}
-/* estructura del formulario de login */
-.login-form{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 2rem;
-}
-/* estructura de contenido de registro */
-.content-register-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-}
-/* color del enlace de registro */
-.colour.register{
-    color: #ff8c00;
-    text-decoration-color: #ff8c00;
-}
-/* tamaño de la línea divisoria */
-.line-size{
-    width: 50%;
-    height: 2px;
-    margin: 1rem auto;
-}
-/* efecto hover del enlace de registro */
-.colour.register:hover{
-    color: black;
-}
-/* estructura del contenido de política de privacidad */
-.content-register-2{
-    text-align: center;
-    margin-top: 1rem;
-    padding: 1rem;
-}
-/* color del enlace de política de privacidad */
-.content-register-3{
-    color: #ff8c00;
-}
-/* efecto hover del enlace de política de privacidad */
-.content-register-3:hover{
-    color: black;
-}
-
-/* feed content abdias*/
-.main-feed{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-}
-.feed-top {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;  
-}
-
-.feed-top button {   
-    border: none;
-    width: 200px;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-bottom: 3px solid #2d2b2b;
-    color: white;
-    background-color: #000;
-}
-
-.feed-top button:hover {
-    color: orange;
-    border-bottom: 3px solid orange;
-}
-
-.feed-middle{
-    width: 60%;
-    background-color:black;
-}
-.feed-article{
-    margin-bottom: 2rem;
-    background-color:#2b2b2b;
-    padding: 0 1rem;
-
-}
-.feed-post-top{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: white;
-    justify-content:space-between;    
-    border-bottom : 2px solid white;
-
-}
-.post-user-left{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.post-user-left img{
-    width: 50px;
-    border-radius: 50%;
-}
-.post-user-right{
-    gap: 1rem;
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
-}
-
-.dropdown {
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.feed-post-middle{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 0.8rem;
-}
-
-.feed-post-middle img{
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-}
-
-.feed-post-bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-}
-
-.feed-post-bottom-reactions{
-    display: flex;
-    gap: 1rem;
-}
-
-.feed-post-bottom-reactions button{
-    border: none;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 1rem 0;
-    font-size: 1.5rem;
-}
-.game-name{
-    font-size: 1.5rem;
-    color: #ccc;
-    
-}
-/*  RESPONSIVE privacy  */
+/* media query search profile */
 @media (max-width: 768px) {
 
-    .grid-container--privacy-policy {
-        grid-template-columns: 1fr;
-        grid-template-rows: 7rem 1fr;
+  .asidebar {
+    display: none;
+  }
 
-        grid-template-areas:
-            "main";
-    }
+  .main-header.main-header-search {
+    display: flex;
+    flex-wrap: wrap;
 
-    .asidebar--privacy-policy,
-    .footer--privacy-policy,
-    .header--privacy-policy {
-        display: none;
-    }
+    align-items: center;
+    justify-content: space-between;
 
+    padding: 1rem;
+  }
+
+  
+  .back-btn {
+    display: block;
+
+    color: white;
+    font-size: 2rem;
+
+    text-decoration: none;
+  }
+
+  
+  .profile {
+    display: none;
+  }
+
+  
+  .title-header {
+    font-size: 0;
+
+    flex: 1;
+    text-align: center;
+
+    margin: 0;
+  }
+
+  .title-header::after {
+    content: "Buscar Usuarios";
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #ff8c00;
+
+    white-space: nowrap;
+  }
+
+  
+  .search-header {
+    order: 4;
+
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 4rem;
+    margin-bottom: 2.75rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+    background: #1c1c1c;
+    border: 1px solid #444;
+    border-radius: 25px;
+    padding: 0.2rem;
+  }
+
+  .search-header input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 0.9rem 1rem;
+
+    border: none;
+    border-radius: 25px 0 0 25px;
+
+    background: transparent;
+    color: white;
+    width: auto;
+  }
+
+  .search-header button {
+    flex-shrink: 0;
+    padding: 0.9rem 1rem;
+
+    border: none;
+    border-radius: 0 25px 25px 0;
+
+    background: transparent;
+    color: #aaa;
+
+    cursor: pointer;
+  }
+
+  
+  .tabs {
+    display: none;
+  }
+
+  
+  .main-content {
+    width: 100%;
+    margin: 0;
+    padding: 3.5rem 1rem 1rem;
+  }
+
+  
+  .person-list {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+<<<<<<< HEAD
     .privacy-title-header {
         position: relative;
         display: flex;
@@ -1132,4 +1425,50 @@ aside {
         flex-direction: row;
         gap: 1rem;
     }
+=======
+  .person-card {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+  }
+
+  .avatar {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+  }
+
+  .person-info {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .person-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .person-info p {
+    font-size: 1.1rem;
+  }
+
+  .follow-btn {
+    width: auto;
+    min-width: 90px;
+
+    padding: 0.6rem 1rem;
+
+    margin-left: auto;
+  }
+
+  .main-footer {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+>>>>>>> developers
 }
