@@ -556,4 +556,96 @@ aside {
     }
 }
 
-/* responsive feed */
+
+/*-------------------estilos login de dani--------------------------------------------------------*/
+/* Estructura general del login */
+.flex-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-login{
+    width: 35%;
+    height: 50%;
+    background-color: #2b2b2b;
+    border-radius: 2px;
+    border:#ccc solid 2px;
+}   
+
+.logo-login{
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 35%;
+    height: 50%;
+}
+
+.welcome-section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+
+.welcome-title{
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+
+.content-register-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.colour.register{
+    color: #ff8c00;
+    text-decoration-color: #ff8c00;
+}
+
+.line-size{
+    width: 50%;
+    height: 2px;
+    margin: 1rem auto;
+}
+
+.colour.register:hover{
+    color: black;
+}
+
+.content-register-2{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.content-register-3{
+    color: #ff8c00;
+}
+
+.content-register-3:hover{
+    color: black;
+}
+/* responsive para pantallas menores a 786px, ajustando el tamaño del contenedor principal del login */
+@media screen and (max-width: 786px){
+    .main-login{
+        width: 90%;
+        height: auto;
+    }
+}
+
+
