@@ -376,18 +376,7 @@ aside {
     position: relative;
     display: none;
 }
-.create-post-header {
-    background: #000000;
-    border-bottom: 1px solid #303030;
-    width: calc(100% + 6rem);
-    margin-left: -3rem;
-    margin-top: -3rem;
 
-    height: 5rem;
-
-    position: relative;
-    display: none;
-}
 
 
 .back-button-header {
@@ -473,7 +462,7 @@ aside {
 
     .grid-container--privacy-policy {
         grid-template-columns: 1fr;
-        grid-template-rows: 7rem 1fr;
+        grid-template-rows: 1fr;
 
         grid-template-areas:
             "main";
@@ -500,7 +489,7 @@ aside {
     
 
     .main-content--privacy-policy {
-        height: calc(100vh - 7rem);
+        height: 100%;
         padding: 2rem;
     }
 
