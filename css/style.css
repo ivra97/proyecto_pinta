@@ -734,6 +734,8 @@ aside {
     .main-login{
         width: 90%;
         height: auto;
+        background-color: black;
+        border:none;
     }
 }
 
