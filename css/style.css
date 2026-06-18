@@ -628,7 +628,116 @@ aside {
     gap: 1rem;
 }
 
-/*  RESPONSIVE  */
+/* feed abdias*/
+.main-feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.feed-top {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;  
+}
+
+.feed-top button {   
+    border: none;
+    width: 200px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid #2d2b2b;
+    color: white;
+    background-color: #000;
+}
+
+.feed-top button:hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+.feed-middle{
+    width: 60%;
+    background-color:black;
+}
+.feed-article{
+    margin-bottom: 2rem;
+    background-color:#2b2b2b;
+    padding: 0 1rem;
+
+}
+.feed-post-top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    justify-content:space-between;    
+    border-bottom : 2px solid white;
+
+}
+.post-user-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.post-user-left img{
+    width: 50px;
+    border-radius: 50%;
+}
+.post-user-right{
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.feed-post-middle{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+}
+
+.feed-post-middle img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.feed-post-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.feed-post-bottom-reactions{
+    display: flex;
+    gap: 1rem;
+}
+
+.feed-post-bottom-reactions button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.game-name{
+    font-size: 1.5rem;
+    color: #ccc;
+    
+}
+
 /*  RESPONSIVE privacy  */
 @media (max-width: 768px) {
 
@@ -913,5 +1022,118 @@ aside {
         display: none;
         font-size: 1.2rem;
         padding: 1rem;
+    }
+}
+
+/*responsive feed */
+@media screen and (max-width: 768px){
+    .grid-container-feed{
+        overflow-x: hidden;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem 1fr 6rem;
+        grid-template-areas: 
+        "heade"
+        "main"
+        "aside";
+    }
+    .main-header-feed{
+        grid-area: heade;
+    }
+    .asidebar-feed{
+        display: none;
+    }
+    .navbar-mobile{
+        grid-area: aside;
+    }
+    .navbar-mobile{
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navbar-mobile a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .icon-mobile{
+    font-size: 1.5rem;
+    }
+    
+    .navbar-mobile span{
+        font-size: 1.5rem;
+    }
+    .navbar-mobile a.create-btn{
+        position: relative;
+        bottom: 1.5rem;
+    }
+    .create-btn-icon{
+        font-size:5rem ;
+        color: orange;
+        background:black;
+        border-radius: 60%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .main-content-feed{
+        grid-area: main;
+    }
+    .main-footer-feed{
+        display: none;
+    }
+    /*empezamos con header*/
+    .main-header-feed{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 4rem ;
+        grid-template-areas:
+        "title search";
+    }
+    .title-header{
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+    }
+    .search-header{
+        grid-area: search;
+        display: flex;
+        background: transparent;
+    }
+    .search-header input {
+        display: none;
+    }
+    .search-header button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .profile{
+        display: none;
+    }
+  /*mian feed*/
+    .main-feed{
+        width: 100%;
+    }
+    .feed-top{
+        width: 80%;
+    }
+    .feed-top button {   
+        width: 10rem;
+    }
+    .feed-middle{
+        width: 90%;
+    }
+    .feed-article{
+        width: 100%;
+    }
+    .feed-post-bottom-reactions button{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
 }
