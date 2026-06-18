@@ -88,7 +88,6 @@ a {
     display: none;
 }
 
-
 .profile-logo {
     margin-left: auto;
 
@@ -377,18 +376,7 @@ aside {
     position: relative;
     display: none;
 }
-.create-post-header {
-    background: #000000;
-    border-bottom: 1px solid #303030;
-    width: calc(100% + 6rem);
-    margin-left: -3rem;
-    margin-top: -3rem;
 
-    height: 5rem;
-
-    position: relative;
-    display: none;
-}
 
 
 .back-button-header {
@@ -465,6 +453,90 @@ aside {
 }
 .publish-button:active {
     transform: translateY(0);
+}
+
+/*-------------------estilos login de dani--------------------------------------------------------*/
+/* Estructura general del login */
+.flex-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-login{
+    width: 35%;
+    height: 50%;
+    background-color: #2b2b2b;
+    border-radius: 2px;
+    border:#ccc solid 2px;
+}   
+
+.logo-login{
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 35%;
+    height: 50%;
+}
+
+.welcome-section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+
+.welcome-title{
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+
+.content-register-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.colour.register{
+    color: #ff8c00;
+    text-decoration-color: #ff8c00;
+}
+
+.line-size{
+    width: 50%;
+    height: 2px;
+    margin: 1rem auto;
+}
+
+.colour.register:hover{
+    color: black;
+}
+
+.content-register-2{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.content-register-3{
+    color: #ff8c00;
+}
+
+.content-register-3:hover{
+    color: black;
 }
 
 /* buscar usuarios */
@@ -563,7 +635,7 @@ aside {
 
     .grid-container--privacy-policy {
         grid-template-columns: 1fr;
-        grid-template-rows: 7rem 1fr;
+        grid-template-rows: 1fr;
 
         grid-template-areas:
             "main";
@@ -590,7 +662,7 @@ aside {
     
 
     .main-content--privacy-policy {
-        height: calc(100vh - 7rem);
+        height: 100%;
         padding: 2rem;
     }
 
@@ -654,6 +726,14 @@ aside {
     .publish-button {
         width: 100%;
         max-width: none;
+    }
+}
+
+/* responsive para pantallas menores a 786px, ajustando el tamaño del contenedor principal del login */
+@media screen and (max-width: 786px){
+    .main-login{
+        width: 90%;
+        height: auto;
     }
 }
 
@@ -729,7 +809,7 @@ aside {
         max-width: 100%;
         box-sizing: border-box;
 
-        margin-top: 4rem;
+        margin-top: 1rem;
         margin-bottom: 2.75rem;
 
         display: flex;
@@ -834,5 +914,4 @@ aside {
         padding: 1rem;
     }
 }
-    
-/* responsive feed */
+
