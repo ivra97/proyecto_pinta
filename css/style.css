@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -101,11 +108,13 @@ a {
 aside {
     grid-area: sidebar;
 }
-.navbar-mobile{
+
+.navbar-mobile {
     display: none;
 }
 
 .asidebar {
+    height: 100%;
     background: #1A1A1A;
     border-right: 1px solid #303030;
     padding: 2rem;
@@ -201,6 +210,7 @@ aside {
 
     padding: 3rem;
     overflow-y: auto;
+    height: 100%;
 }
 
 
@@ -319,6 +329,7 @@ aside {
 
 .search-header {
     width: 300px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -364,18 +375,7 @@ aside {
     position: relative;
     display: none;
 }
-.create-post-header {
-    background: #000000;
-    border-bottom: 1px solid #303030;
-    width: calc(100% + 6rem);
-    margin-left: -3rem;
-    margin-top: -3rem;
 
-    height: 5rem;
-
-    position: relative;
-    display: none;
-}
 
 
 .back-button-header {
@@ -453,364 +453,90 @@ aside {
 .publish-button:active {
     transform: translateY(0);
 }
-/*  MEDIA QUERIES  */
 
-/*  RESPONSIVE  */
-/*  RESPONSIVE privacy  */
-@media (max-width: 768px) {
-
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 7rem 1fr;
-
-        grid-template-areas:
-            "header"
-            "main";
-    }
-
-    aside,
-    .main-footer,
-    .pinta,
-    .profile-logo {
-        display: none;
-    }
-
-    .main-header {
-        justify-content: center;
-        padding: 0 1.5rem;
-    }
-
-    .back-arrow {
-        display: block;
-        position: absolute;
-        left: 1.5rem;
-
-        font-size: 2.2rem;
-        color: #fff;
-    }
-
-    .page-title {
-        display: block;
-        font-size: 1.6rem;
-        color: #FF8C00;
-        text-align: center;
-    }
-
-    .main-content {
-        height: calc(100vh - 7rem);
-        padding: 2rem;
-    }
-
-    .privacy-container {
-        border-radius: 0;
-        padding: 2.5rem;
-    }
-}
-
-.title-header-center {
+/*-------------------estilos login de dani--------------------------------------------------------*/
+/* Estructura general del login */
+.flex-login{
+    display: flex;
     justify-content: center;
-}
-
-#header-privacy-policy {
-    justify-content: space-between;
-    padding-left: 64rem;
-}
-
-.title-header {
-    color: orange;
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.search-header {
-    width: 300px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-login{
+    width: 35%;
+    height: 50%;
     background-color: #2b2b2b;
-    border-radius: 25px;
-    padding: 1rem 1rem;
-    justify-content: space-between;
-    margin-left: 0;
+    border-radius: 2px;
+    border:#ccc solid 2px;
+}   
+
+.logo-login{
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 35%;
+    height: 50%;
 }
 
-.search-header input {
-    border: none;
-    outline: none;
-    background: transparent;
-    color: white;
-    font-size: 1.5rem;
-    width: 250px;
-}
-
-.search-header input::placeholder {
-    color: white;
-}
-
-.search-header button {
-    border: none;
-    background: transparent;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-/* feed content */
-.feed-header {
-    width: 80%;
+.welcome-section{ 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
-    margin: 0 auto;
+    height: 20%;
 }
 
-.feed-header button {
-    width: 200px;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    background-color: transparent;
-    border-bottom: 3px solid #2d2b2b;
-}
 
-.feed-header button:hover {
+.welcome-title{
+    text-align: center;
     color: orange;
-    border-bottom: 3px solid orange;
+    font-size: 40px;
 }
 
-.post-feed {
-    width: 60%;
-    background-color: #2b2b2b;
-    padding: 0 1rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.post-user {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: white;
-    justify-content: space-between;
-    border-bottom: 2px solid white;
-}
-
-.post-user-left {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-.post-user-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
-}
-
-.post-user-left img {
-    width: 50px;
-    border-radius: 50%;
-}
-
-.post-user-right button {
-    border: none;
-    background-color: orange;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 0.4rem 2rem;
-    font-size: 1.5rem;
-}
-
-.dropdown {
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.post-card {
-    color: white;
+.login-form{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 0.8rem;
+    gap: 2rem;
+    padding: 2rem 2rem;
 }
 
-.post-card img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-}
-
-.post-footer {
+.content-register-1{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-}
-
-.post-footer-reactions {
-    display: flex;
-    gap: 1rem;
-}
-
-.post-footer-reactions button {
-    border: none;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 1rem 0;
+    gap: 0.5rem;
     font-size: 1.5rem;
 }
 
-.game-name {
-    font-size: 1.5rem;
-    color: #ccc;
+.colour.register{
+    color: #ff8c00;
+    text-decoration-color: #ff8c00;
 }
 
-/* responsive feed */
-@media screen and (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 6rem;
-        grid-template-areas:
-            "header"
-            "main"
-            "aside";
-    }
-
-    .title-header {
-        font-size: 2rem;
-        margin-left: 15rem;
-        padding: 1rem 0;
-    }
-
-    .search-header {
-        width: auto;
-        margin-left: 0;
-        background: transparent;
-    }
-
-    .search-header input {
-        display: none;
-    }
-
-    .profile {
-        display: none;
-    }
-
-    .feed-header {
-        width: 95%;
-        padding: 2rem 0;
-    }
-
-    .feed-header button {
-        width: 10rem;
-        font-size: 1.5em;
-    }
-
-    .post-feed {
-        width: 85%;
-        padding: 1rem 0.5rem;
-    }
-
-    .post-user-left img {
-        width: 4rem;
-    }
-
-    .post-user-left {
-        font-size: 1.2rem;
-    }
-
-    .post-user-right button {
-        font-size: 1.2rem;
-        padding: 0.4rem 1rem;
-    }
-
-    .post-card h2 {
-        font-size: 1.4rem;
-    }
-
-    .post-card p {
-        font-size: 1.2rem;
-    }
-
-    aside {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #2b2b2b;
-        z-index: 1000;
-    }
-
-    .navbar-aside {
-        height: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 0.5rem;
-    }
-
-    .nav-top-aside,
-    .nav-bottom-aside,
-    .profile-mobile {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.3rem;
-        justify-content: center;
-        flex: 1;
-    }
-
-    .profile-mobile img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-
-    .profile-mobile a {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        justify-content: center;
-    }
-
-    .profile-mobile .mobile-text {
-        font-size: 1.2rem;
-    }
-
-    .navbar a {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        gap: 0.2rem;
-    }
-
-    .desktop-text,
-    .nav-bottom {
-        display: none;
-    }
-
-    .mobile-text {
-        display: inline;
-    }
-
-    .cerrar-sesion {
-        display: none;
-    }
+.line-size{
+    width: 50%;
+    height: 2px;
+    margin: 1rem auto;
 }
 
+.colour.register:hover{
+    color: black;
+}
 
+.content-register-2{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.content-register-3{
+    color: #ff8c00;
+}
+
+.content-register-3:hover{
+    color: black;
+}
 
 /* buscar usuarios */
 .back-btn {
@@ -895,335 +621,31 @@ aside {
     background: #444;
 }
 
-.header-left,
-.header-right {
+.main--header--search 
+.main--content--search {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-
-
-
-/* login */
-.flex-login {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-login {
-    flex: 1;
-}
-
-/* Css de Ema : Profile*/
-
-body{
-    margin :0;
-    background-color: black;
-    color: white;
-    font-family:"Lato", sans-serif;
-}
-
-.perfil-header{
-    width: 100%;
-}
-
-.banner{
-    width: 100%;
-    height: 100%;
-    background-color: #d9d9d9;
-}
-.banner img{
-    width: 20%;
-    height: 20%;
-    object-fit: cover;
-}
-
-.perfil-info-container{
-    padding: 20px 40px;
-    position: relative;
-}
-.perfil-avatar img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid white;
-    object-fit: cover;
-
-    position: absolute;
-    top:-60px;
-    left: 40px;
-
-    background-color: gray;
-}
-
-.perfil-datos{
-    margin-top: 70px;
-}
-
-.descripcion{
-    color: #aaa;
-    max-width: 700px;
-}
-
-.perfil-extra{
-    margin-top: 20px;
-    color: #999;
-}
-
-.perfil-extra p{
-    margin: 5px 0;
-}
-
-/* buttons Ema */
-
-.perfil-botones{
-    position: ansolute;
-    right: 40px;
-    top: 20px;
-
-    display: flex;
-    gap: 1rem;
-}
-
-.perfil-botones button{
-    background-color: transparent;
-    border: 1px solid orange;
-    color: orange;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-/* estadisticas Profile Ema*/
-
-.estadisticas{
-    display: flex;
-    justify-content: space-around;
-
-    margin-top: 30px;
-    text-align: center;
-
-}
-
-.estadisticas h3{
-    margin: 0;
-    font-size: 28px;
-}
-
-.estadisticas p{
-    color: #888;
-}
-
-/* Register Ema */
-
-/* Conteiner */
-.register-page{
-    background-color: black;
-}
-/* Card */
-.register-card {
-    background-color: #1b1b1b;
-
-    border: 1px solid #777;
-
-    padding: 40px 30px;
-
-    min-height: 650px;
-}
-/* Logo */
-.logo-register{
-    width: 80px;
-}
-
-/* Tittle */
-.register-title{
-    color: #ff8400;
-    font-weight: 700;
-    margin-bottom: 35px;
-}
-/* Inputs */
-.input-group-text{
-    background-color: #2a2222;
-    border: 1px solid #3a2d2d;
-    color: #7f8a9a;
-}
-
-.form-control{
-    background-color:#2a2222;
-    border: 1px solid #3a2d2d;
-    color: white;
-}
-
-.form-control:focus{
-    background-color:#2a2222;
-    color: white;
-    box-shadow: none;
-    border-color: #ff8400;
-}
-
-/* Check Box */
-
-.form-check-label{
-    color:#999;
-    font-size: 12px;
-}
-.form-check-label a{
-    color:#ff8400;
-}
-
-/* Botton */
-
-.btn-register{
-    background-color: #ff8400;
-    color: white;
-    font-size: 32px;
-    font-weight: 700;
-    border-radius: 0;
-    margin-top: 20px;
-}
-
-.btn-register:hover{
-    background-color: #e67600;
-    color: white;
-}
-
-/* Login */
-.login-link{
-    margin-top:40px;
-}
-
-.login-link p{
-    color:#ff8400;
-    font-weight: bold;
-}
-
-.login-link a{
-    color: #ff8400;
-    font-weight: bold;
-}
-
-/* media query search profile */
+/*  RESPONSIVE  */
+/*  RESPONSIVE privacy  */
 @media (max-width: 768px) {
 
-  .asidebar {
-    display: none;
-  }
+    .grid-container--privacy-policy {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
 
-  .main-header.main-header-search {
-    display: flex;
-    flex-wrap: wrap;
+        grid-template-areas:
+            "main";
+    }
 
-    align-items: center;
-    justify-content: space-between;
+    .asidebar--privacy-policy,
+    .footer--privacy-policy,
+    .header--privacy-policy {
+        display: none;
+    }
 
-    padding: 1rem;
-  }
-
-  
-  .back-btn {
-    display: block;
-
-    color: white;
-    font-size: 2rem;
-
-    text-decoration: none;
-  }
-
-  
-  .profile {
-    display: none;
-  }
-
-  
-  .title-header {
-    font-size: 0;
-
-    flex: 1;
-    text-align: center;
-
-    margin: 0;
-  }
-
-  .title-header::after {
-    content: "Buscar Usuarios";
-
-    font-size: 2rem;
-    font-weight: bold;
-
-    color: #ff8c00;
-
-    white-space: nowrap;
-  }
-
-  
-  .search-header {
-    order: 4;
-
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-
-    margin-top: 4rem;
-    margin-bottom: 2.75rem;
-
-    display: flex;
-    align-items: center;
-    gap: 0;
-
-    background: #1c1c1c;
-    border: 1px solid #444;
-    border-radius: 25px;
-    padding: 0.2rem;
-  }
-
-  .search-header input {
-    flex: 1;
-    min-width: 0;
-
-    padding: 0.9rem 1rem;
-
-    border: none;
-    border-radius: 25px 0 0 25px;
-
-    background: transparent;
-    color: white;
-    width: auto;
-  }
-
-  .search-header button {
-    flex-shrink: 0;
-    padding: 0.9rem 1rem;
-
-    border: none;
-    border-radius: 0 25px 25px 0;
-
-    background: transparent;
-    color: #aaa;
-
-    cursor: pointer;
-  }
-
-  
-  .tabs {
-    display: none;
-  }
-
-  
-  .main-content {
-    width: 100%;
-    margin: 0;
-    padding: 3.5rem 1rem 1rem;
-  }
-
-  
-  .person-list {
-    width: 100%;
-    padding: 0;
-    margin-top: 2rem;
-  }
-
-<<<<<<< HEAD
     .privacy-title-header {
         position: relative;
         display: flex;
@@ -1239,7 +661,7 @@ body{
     
 
     .main-content--privacy-policy {
-        height: calc(100vh - 7rem);
+        height: 100%;
         padding: 2rem;
     }
 
@@ -1306,169 +728,190 @@ body{
     }
 }
 
-/* responsive login */
+/* responsive para pantallas menores a 786px, ajustando el tamaño del contenedor principal del login */
 @media screen and (max-width: 786px){
     .main-login{
         width: 90%;
         height: auto;
+        background-color: black;
+        border:none;
     }
 }
 
-/*responsive fee */
-@media screen and (max-width: 768px){
-    .grid-container-feed{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 6rem 1fr 6rem;
-        grid-template-areas: 
-        "heade"
-        "main"
-        "aside";
-    }
-    .main-header-feed{
-        grid-area: heade;
-    }
-    .asidebar-feed{
-        display: none;
-    }
-    .navbar-mobile{
-        grid-area: aside;
-    }
-    .navbar-mobile{
-        height: 6rem;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .navbar-mobile a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .icon-mobile{
-    font-size: 1.5rem;
-    }
-    
-    .navbar-mobile span{
-        font-size: 1.5rem;
-    }
-    .navbar-mobile a.create-btn{
-        position: relative;
-        bottom: 1.5rem;
-    }
-    .create-btn-icon{
-        font-size:5rem ;
-        color: orange;
-        background:black;
-        border-radius: 60%;
-        width: 50px;
-        height: 50px;
-    }
-    
+/* media query search profile */
+@media (max-width: 768px) {
 
-    .main-content-feed{
-        grid-area: main;
-    }
-    .main-footer-feed{
-        display: none;
-    }
-    /*empezamos con header*/
-    .main-header-feed{
-        align-items: center;
-        display: grid;
-        grid-template-columns: 1fr 4rem ;
+    .clase-especial-dani{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
         grid-template-areas:
-        "title search";
+            "header"
+            "main";
+        
     }
-    .title-header{
-        grid-area: title;
-        display: flex;
-        justify-content: center;
-    }
-    .search-header{
-        grid-area: search;
-        display: flex;
-        background: transparent;
-    }
-    .search-header input {
+
+    .asidebar-search {
         display: none;
     }
-    .search-header button {
-        background: none;
+
+    .main--header--profile {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1rem;
+        height: 100%;
+    }
+
+  
+    .back-btn {
+        display: block;
+
+        color: white;
+        font-size: 2rem;
+
+        text-decoration: none;
+    }
+
+  
+    .profile {
+        display: none;
+    }
+
+  
+    .title-header-search {
+        font-size: 0;
+
+        flex: 1;
+        text-align: center;
+
+        margin: 0;
+    }
+
+    .title-header-search::after {
+        content: "Buscar Usuarios";
+
+        font-size: 2rem;
+        font-weight: bold;
+
+        color: #ff8c00;
+
+        white-space: nowrap;
+    }
+
+  
+    .search-main-user {
+        order: 4;
+
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        margin-top: 1rem;
+        margin-bottom: 2.75rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0;
+
+        background: #1c1c1c;
+        border: 1px solid #444;
+        border-radius: 25px;
+        padding: 0.2rem;
+    }
+
+    .search-main-user input {
+        flex: 1;
+        min-width: 0;
+
+        padding: 0.9rem 1rem;
+
         border: none;
+        border-radius: 25px 0 0 25px;
+
+        background: transparent;
+        color: white;
+        width: auto;
+    }
+
+    .search-main-user button {
+        flex-shrink: 0;
+        padding: 0.9rem 1rem;
+
+        border: none;
+        border-radius: 0 25px 25px 0;
+
+        background: transparent;
+        color: #aaa;
+
         cursor: pointer;
     }
-    .profile{
+
+  
+    .tabs {
         display: none;
     }
-  /*mian feed*/
-    .main-feed{
+
+  
+    .main--content--search {
         width: 100%;
+        margin: 0;
+        padding: 3.5rem 1rem 1rem;
     }
-    .feed-top{
-        width: 80%;
-    }
-    .feed-top button {   
-        width: 10rem;
-    }
-    .feed-middle{
+
+  
+    .person-list {
         width: 90%;
+        padding: 0;
+        margin: 2rem auto 0;
     }
-    .feed-article{
-        width: 100%;
-    }
-    .feed-post-bottom-reactions button{
+
+    .person-card {
         display: flex;
         flex-direction: row;
+
+        align-items: center;
         gap: 1rem;
+
+        padding: 1rem;
     }
-=======
-  .person-card {
-    display: flex;
-    flex-direction: row;
 
-    align-items: center;
-    gap: 1rem;
+    .avatar {
+        width: 45px;
+        height: 45px;
 
-    padding: 1rem;
-  }
+        flex-shrink: 0;
+    }
 
-  .avatar {
-    width: 45px;
-    height: 45px;
+    .person-info {
+        flex: 1;
+        margin-left: 0;
+    }
 
-    flex-shrink: 0;
-  }
+    .person-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.2rem;
+    }
 
-  .person-info {
-    flex: 1;
-    margin-left: 0;
-  }
+    .person-info p {
+        font-size: 1.1rem;
+    }
 
-  .person-info h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.2rem;
-  }
+    .follow-btn {
+        width: auto;
+        min-width: 90px;
 
-  .person-info p {
-    font-size: 1.1rem;
-  }
+        padding: 0.6rem 1rem;
 
-  .follow-btn {
-    width: auto;
-    min-width: 90px;
+        margin-left: auto;
+    }
 
-    padding: 0.6rem 1rem;
-
-    margin-left: auto;
-  }
-
-  .main-footer {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
->>>>>>> developers
+    .main-footer-search {
+        display: none;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
 }
