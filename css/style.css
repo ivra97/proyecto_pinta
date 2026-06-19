@@ -628,6 +628,7 @@ aside {
     gap: 1rem;
 }
 
+
 /* feed abdias*/
 .main-feed{
     display: flex;
@@ -1135,5 +1136,160 @@ aside {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+    }
+}
+
+
+/* Profile */
+
+.perfil-header{
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:30px;
+}
+
+.banner{
+    width:100%;
+    height:250px;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* buttons Ema */
+
+.perfil-botones{
+    position:absolute;
+    top:20px;
+    right:30px;
+}
+
+.perfil-botones button{
+    padding:10px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.perfil-info-container{
+    position:relative;
+    padding:80px 30px 30px;
+}
+
+.perfil-avatar{
+    position:absolute;
+    top:-75px;
+    left:30px;
+
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+    overflow:hidden;
+
+    border:5px solid #111;
+    background:#222;
+}
+
+.perfil-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.perfil-datos{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.perfil-datos h2{
+    font-size:2rem;
+}
+
+.descripcion{
+    max-width:600px;
+    color:#ccc;
+}
+
+.perfil-extra{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    color:#aaa;
+}
+
+.perfil-botones{
+    position:absolute;
+    top:20px;
+    right:30px;
+}
+
+.perfil-botones button{
+    padding:10px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Stats */
+
+.estadisticas{
+    display:flex;
+    gap:50px;
+    margin-top:20px;
+}
+
+.estadisticas div{
+    text-align:center;
+}
+
+.estadisticas h3{
+    font-size:1.8rem;
+}
+
+/* mediaquerie Profile */
+@media (max-width: 768px){
+
+    .perfil-info-container{
+        padding-top:90px;
+        text-align:center;
+    }
+
+    .perfil-avatar{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .perfil-botones{
+        position:static;
+        margin-bottom:20px;
+    }
+
+    .perfil-extra{
+        justify-content:center;
+    }
+
+    .estadisticas{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .post-user{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .post-user-right{
+        width:100%;
+        justify-content:center;
+    }
+
+    .post-footer-reactions{
+        justify-content:center;
     }
 }

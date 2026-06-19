@@ -14,12 +14,18 @@
     <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="grid-container">
-        <header class="title-header-center main-header">
-            <h1 class="title-header" >PINTA</h1>       
+    <div class="grid-container grid-container-feed">
+        <header class="main-header main-header-feed">
+            <h1 class="title-header" >PINTA</h1>   
+            
+            <div class="search-header">
+                <input type="text" placeholder="Buscar..." />
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
         </header>
 
-        <aside class="asidebar">
+        <aside class="asidebar asidebar-feed">
             <nav class="navbar-aside sidebar-nav">
                 <div class="nav-top-aside nav-top">
                     <a href="feed.html">
@@ -33,13 +39,13 @@
                         <span class="desktop-text-aside">Buscar Usuarios</span>
                         <span class="mobile-text-aside">Buscar</span>
                     </a>
-                </div>
-                <div class="mobile-only-aside">
-                    <a href="profile.html" class="profile profile-mobile">
-                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil">
-                        <span class="mobile-text-aside">Perfil</span>
+                    <a href="create-post.html">
+                        <i class="fa-solid fa-circle-plus"></i>
+                       <span class="desktop-text-aside">Crear Post</span>
+                       <span class="mobile-text-aside">Crear</span>
                     </a>
                 </div>
+                
 
                 <hr>
 
@@ -52,13 +58,44 @@
                     <a href="#">
                          <i class="fa-solid fa-right-from-bracket"></i>
                          <span class="desktop-text-aside">Cerrar sesión</span>
-                         <span class="mobile-text-aside">Salir</span>
                     </a>
                 </div>
                 
+                <div class="mobile-only-aside">
+                    <a href="profile.html" class="profile profile-mobile">
+                        <img src="img/avatar.pinta1111.png" alt="Avatar perfil">
+                        <span class="mobile-text-aside">Perfil</span>
+                    </a>
+                </div>
            </nav>
+
         </aside>
-        <main class="main-content">
+        
+        <aside class="navbar-mobile">
+            <a href="feed.html">
+                <i class="fa-solid fa-house icon-mobile"></i>
+                <span>Inicio</span>
+            </a>
+            <a href="search-profile.html">
+                <i class="fa-solid fa-magnifying-glass icon-mobile"></i>
+                <span>Buscar</span>
+            </a>
+
+            <a href="create-post.html" class="create-btn">
+                <i class="fa-solid fa-circle-plus create-btn-icon"></i>
+                <span>Crear</span>
+            </a>
+
+            <a href="privacy-policy.html">
+                <i class="fa-regular fa-file-lines icon-mobile"></i>
+                <span>Política</span>
+            </a>
+            <a href="profile.html">
+                <i class="fa-regular fa-user icon-mobile"></i>
+                <span>Perfil</span>
+            </a>
+        </aside> 
+        <main class="main-content main-content-feed">
 
             <!-- HEADER PERFIL -->
             <section class="perfil-header">
@@ -107,8 +144,7 @@
                     </div>
 
                     <div class="perfil-botones">
-                        <button>Crear post</button>
-                        <button>Editar perfil</button>
+                        <button>Editar Perfil</button>
                     </div>
 
                 </div>
@@ -116,40 +152,37 @@
             </section>
 
             <!-- POST De Ema-->
-            <article class="post-feed">
-                <div class="post-user">
-                    <div class="post-user-left">
-                        <img src="img/avatar.pinta1111.png" alt="imagen de Usuario" />
-                        <h2>Miguel el Anashe</h2>
-                    </div>
-                    <div class="post-user-right">
-                        <button class="follow-btn">Seguir</button>
-                        <div class="dropdown"><i class="fa-solid fa-bars"></i>
+                    <article class="feed-article">
+                        <div class="feed-post-top">
+                            <div class="post-user-left">
+                                <img src="img/avatar.pinta1111.png" alt="imagen de Usuario" />
+                                <h2>Abdias</h2>
+                            </div>
+                            <div class="post-user-right">                            
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-ellipsis"></i> 
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="post-card">
-                    <!-- TITULO -->
-                    <h2>Reventando Botcitos en el lol</h2>
-                    <!-- Descripcion-->
-                    <p>Aguante graves!!Aguante graves!!Aguante graves!!Aguante graves!</p>
-                    <!-- IMAGEN -->
-                    <img src="img/placeholder-img.png" alt="Publicación" />
-                </div>
+                        <div class="feed-post-middle">
+                            <h2>Rebentando botcitos</h2>
+                            <p>Aguante Graves!! Aguante Graves!! Aguante Graves!! Aguante Graves!! Aguante Graves!!</p>
+                            <img src="img/placeholder-img.png" alt="Publicación" />
+                        </div>
     
-                <div class="post-footer">
-                    <div class="post-footer-reactions">
-                         <button><i class="fa-solid fa-thumbs-up"></i> 1</button>
-                        <button><i class="fa-solid fa-thumbs-down"></i> 2</button>
-                        <button><i class="fa-solid fa-comment"></i> 4 comentarios</button>
-                    </div>
-                <h4 class="game-name">League of Legends</h4>
-            </article>
+                        <div class="feed-post-bottom">
+                            <div class="feed-post-bottom-reactions">
+                                <button><i class="fa-solid fa-thumbs-up"></i> 1</button>
+                                <button><i class="fa-solid fa-thumbs-down"></i> 2</button>
+                                <button><i class="fa-solid fa-comment"></i> 4 </button>
+                            </div>
+                            <h4 class="game-name">League of Legends</h4>
+                        </div>          
+                    </article>
 
         </main>
 
-        <footer class="main-footer">
+        <footer class="main-footer main-footer-feed">
             <p>
                 <a href="https://opensource.org/license/MIT">Pinta, Inc ⓒ 2026 MIT License</a>
             </p>
