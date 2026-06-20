@@ -1142,7 +1142,7 @@ aside {
 
 /* Profile */
 
-.perfil-header{
+.profile-header{
     background:#111;
     border-radius:10px;
     overflow:hidden;
@@ -1175,12 +1175,12 @@ aside {
     cursor:pointer;
 }
 
-.perfil-info-container{
+.profile-info-container{
     position:relative;
     padding:80px 30px 30px;
 }
 
-.perfil-avatar{
+.profile-avatar{
     position:absolute;
     top:-75px;
     left:30px;
@@ -1195,19 +1195,19 @@ aside {
     background:#222;
 }
 
-.perfil-avatar img{
+.profile-avatar img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
 
-.perfil-datos{
+.profile-data {
     display:flex;
     flex-direction:column;
     gap:15px;
 }
 
-.perfil-datos h2{
+.profile-data h2{
     font-size:2rem;
 }
 
@@ -1216,20 +1216,20 @@ aside {
     color:#ccc;
 }
 
-.perfil-extra{
+.profile-extra{
     display:flex;
     gap:30px;
     flex-wrap:wrap;
     color:#aaa;
 }
 
-.perfil-botones{
+.profile-buttons{
     position:absolute;
     top:20px;
     right:30px;
 }
 
-.perfil-botones button{
+.profile-buttons button{
     padding:10px 20px;
     border:none;
     border-radius:6px;
@@ -1238,17 +1238,17 @@ aside {
 
 /* Stats */
 
-.estadisticas{
+.stats{
     display:flex;
     gap:50px;
     margin-top:20px;
 }
 
-.estadisticas div{
+.stats div{
     text-align:center;
 }
 
-.estadisticas h3{
+.stats h3{
     font-size:1.8rem;
 }
 
@@ -1256,26 +1256,26 @@ aside {
 
 @media (max-width: 768px){
 
-    .perfil-info-container{
+    .profile-info-container{
         padding-top:90px;
         text-align:center;
     }
 
-    .perfil-avatar{
+    .profile-avatar{
         left:50%;
         transform:translateX(-50%);
     }
 
-    .perfil-botones{
+    .profile-buttons{
         position:static;
         margin-bottom:20px;
     }
 
-    .perfil-extra{
+    .profile-extra{
         justify-content:center;
     }
 
-    .estadisticas{
+    .stats{
         flex-direction:column;
         gap:15px;
     }
