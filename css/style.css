@@ -1253,6 +1253,7 @@ aside {
 }
 
 /* mediaquerie Profile */
+
 @media (max-width: 768px){
 
     .perfil-info-container{
@@ -1292,4 +1293,93 @@ aside {
     .post-footer-reactions{
         justify-content:center;
     }
+}
+
+/* Register Ema */
+
+.register-page{
+    background-color:#0f0f0f;
+    min-height:100vh;
+}
+
+.register-card{
+    background:#1b1b1b;
+    padding:3rem;
+    border-radius:1rem;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.logo-register{
+    width:120px;
+    height:auto;
+}
+
+.register-title{
+    color:white;
+    margin-bottom:2rem;
+}
+
+.btn-register{
+    background-color:orange;
+    color:black;
+    font-weight:bold;
+    border:none;
+}
+
+.btn-register:hover{
+    background-color:#ffb347;
+}
+
+.login-link{
+    margin-top:1.5rem;
+}
+
+.login-link p{
+    color:white;
+    margin-bottom:.5rem;
+}
+
+.login-link a{
+    color:orange;
+    text-decoration:none;
+}
+
+/* mediaquierie Register Ema */
+
+@media screen and (max-width: 576px){
+
+    .register-card{
+        padding:1.5rem;
+        border-radius:.8rem;
+    }
+
+    .logo-register{
+        width:80px;
+    }
+
+    .register-title{
+        font-size:1.8rem;
+        margin-bottom:1.5rem;
+    }
+
+    .form-control{
+        font-size:1.4rem;
+    }
+
+    .input-group-text{
+        font-size:1.3rem;
+    }
+
+    .btn-register{
+        font-size:1.5rem;
+        padding:.8rem;
+    }
+
+    .login-link{
+        font-size:1.3rem;
+    }
+    .form-check-label{
+    color: white;
+}
+
 }
