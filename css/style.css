@@ -1344,6 +1344,10 @@ aside {
     text-decoration:none;
 }
 
+.form-check-label{
+    color: white;
+}
+
 /* mediaquierie Register Ema */
 
 @media screen and (max-width: 576px){
@@ -1378,8 +1382,6 @@ aside {
     .login-link{
         font-size:1.3rem;
     }
-    .form-check-label{
-    color: white;
-}
+    
 
 }
