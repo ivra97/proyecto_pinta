@@ -1142,6 +1142,8 @@ aside {
 
 /* Profile */
 
+
+
 .profile-header{
     background:#111;
     border-radius:10px;
@@ -1162,17 +1164,19 @@ aside {
 
 /* buttons Ema */
 
-.perfil-botones{
+.profile-buttons{
     position:absolute;
     top:20px;
     right:30px;
 }
 
-.perfil-botones button{
-    padding:10px 20px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
+.button-profile{
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px 20px;
+    border-radius: 5px; /* opcional */
+    cursor: pointer;
 }
 
 .profile-info-container{
@@ -1230,10 +1234,13 @@ aside {
 }
 
 .profile-buttons button{
-    padding:10px 20px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px 20px;
+    border-radius: 5px; /* opcional */
+    cursor: pointer;
+
 }
 
 /* Stats */
@@ -1269,6 +1276,12 @@ aside {
     .profile-buttons{
         position:static;
         margin-bottom:20px;
+    }
+    .btn-register{
+    background-color:orange;
+    color:black;
+    font-weight:bold;
+    border:none;
     }
 
     .profile-extra{
@@ -1381,6 +1394,9 @@ aside {
 
     .login-link{
         font-size:1.3rem;
+    }
+    .btn-crear-post {
+    display: none;
     }
     
 
