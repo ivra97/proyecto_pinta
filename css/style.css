@@ -29,7 +29,7 @@ p {
     line-height: 1.6;
 }
 .profile img{
-    width: 50px;
+    width: 5rem;
     border-radius: 50%;
 }
 a {
@@ -65,7 +65,7 @@ a {
     padding: 0 2rem;
 
     background-color: #1A1A1A;
-    border-bottom: 1px solid #303030;
+    border-bottom: 0.1rem solid #303030;
 }
 
 
@@ -78,7 +78,7 @@ a {
     font-size: 2.8rem;
     font-weight: 800;
     color: #FF8C00;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 .page-title,
@@ -93,7 +93,7 @@ a {
     height: 4rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid #303030;
+    border: 0.1rem solid #303030;
 }
 
 .profile-logo-image {
@@ -115,12 +115,12 @@ aside {
 .asidebar {
     height: 100%;
     background: #1A1A1A;
-    border-right: 1px solid #303030;
+    border-right: 0.1rem solid #303030;
     padding: 2rem;
 }
 .sidebar-nav hr {
     margin: 3rem 0 2rem;
-    height: 1px;
+    height: 0.1rem;
     border: none;
     background: #303030;
     opacity: 0.8;
@@ -180,7 +180,7 @@ aside {
     display: flex;
     align-items: center;
     padding: 0.8rem 0.6rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     gap: 0.7rem;
 }
 
@@ -294,7 +294,7 @@ aside {
     align-items: center;
 
     background: #1A1A1A;
-    border-top: 1px solid #303030;
+    border-top: 0.1rem solid #303030;
 }
 
 .main-footer p,
@@ -322,13 +322,13 @@ aside {
 }
 
 .search-header {
-    width: 300px;
-    height: 40px;
+    width: 30rem;
+    height: 4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #2b2b2b;
-    border-radius: 25px;
+    border-radius: 2.5rem;
     padding: 1rem 1rem;
     justify-content: space-between;
     margin-left: 0;
@@ -340,7 +340,7 @@ aside {
     background: transparent;
     color: white;
     font-size: 1.5rem;
-    width: 250px;
+    width: 25rem;
 }
 
 .search-header input::placeholder {
@@ -359,7 +359,7 @@ aside {
 /*   create post   */
 .create-post-header {
     background: #000000;
-    border-bottom: 1px solid #303030;
+    border-bottom: 0.1rem solid #303030;
     width: calc(100% + 6rem);
     margin-left: -3rem;
     margin-top: -3rem;
@@ -425,7 +425,7 @@ aside {
     transition: transform 0.15s ease;
 }
 .publish-button:hover {
-    transform: translateY(-2px);
+    transform: translateY(-0.2rem);
 }
 .publish-button:active {
     transform: translateY(0);
@@ -444,8 +444,8 @@ aside {
     width: 35%;
     height: 50%;
     background-color: #2b2b2b;
-    border-radius: 2px;
-    border:#ccc solid 2px;
+    border-radius: 2rem;
+    border:#ccc solid 0.2rem;
 }   
 .logo-login{
     display: block;
@@ -463,7 +463,7 @@ aside {
 .welcome-title{
     text-align: center;
     color: orange;
-    font-size: 40px;
+    font-size: 4rem;
 }
 .login-form{
     display: flex;
@@ -484,7 +484,7 @@ aside {
 }
 .line-size{
     width: 50%;
-    height: 2px;
+    height: 0.2rem;
     margin: 1rem auto;
 }
 .colour.register:hover{
@@ -597,16 +597,16 @@ aside {
 }
 .feed-top button {   
     border: none;
-    width: 200px;
+    width: 20rem;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
-    border-bottom: 3px solid #2d2b2b;
+    border-bottom: 0.3rem solid #2d2b2b;
     color: white;
     background-color: #000;
 }
 .feed-top button:hover {
     color: orange;
-    border-bottom: 3px solid orange;
+    border-bottom: 0.3rem solid orange;
 }
 .feed-middle{
     width: 60%;
@@ -623,7 +623,7 @@ aside {
     width: 100%;
     color: white;
     justify-content:space-between;    
-    border-bottom : 2px solid white;
+    border-bottom : 0.2rem solid white;
 }
 .post-user-left{
     display: flex;
@@ -631,7 +631,7 @@ aside {
     align-items: center;
 }
 .post-user-left img{
-    width: 50px;
+    width: 5rem;
     border-radius: 50%;
 }
 .post-user-right{
@@ -669,7 +669,7 @@ aside {
     background-color: transparent;
     color: white;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 1rem;
     padding: 1rem 0;
     font-size: 1.5rem;
 }
@@ -679,99 +679,134 @@ aside {
     
 }
 
+
 /* Profile */
+
+
+
 .profile-header{
     background:#111;
-    border-radius:10px;
+    border-radius:1rem;
     overflow:hidden;
-    margin-bottom:30px;
+    margin-bottom:3rem;
 }
+
 .banner{
     width:100%;
-    height:250px;
+    height:25rem;
 }
+
 .banner img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
+
 /* buttons Ema */
+
 .profile-buttons{
     position:absolute;
-    top:20px;
-    right:30px;
+    top:2rem;
+    right:3rem;
 }
+
 .button-profile{
     background-color: black;
     color: orange;
-    border: 1px solid orange;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border: 0.1rem solid orange;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem; /* opcional */
     cursor: pointer;
 }
+
 .profile-info-container{
     position:relative;
-    padding:80px 30px 30px;
+    padding:8rem 3rem 3rem;
 }
+
 .profile-avatar{
     position:absolute;
-    top:-75px;
-    left:30px;
-    width:150px;
-    height:150px;
+    top:-7.5rem;
+    left:3rem;
+
+    width:15rem;
+    height:15rem;
+
     border-radius:50%;
     overflow:hidden;
-    border:5px solid #111;
+
+    border:0.5rem solid #111;
     background:#222;
 }
+
 .profile-avatar img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
+
 .profile-data {
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:1.5rem;
 }
+
 .profile-data h2{
     font-size:2rem;
 }
+
 .descripcion{
-    max-width:600px;
+    max-width:60rem;
     color:#ccc;
 }
+
 .profile-extra{
     display:flex;
-    gap:30px;
+    gap:3rem;
     flex-wrap:wrap;
     color:#aaa;
 }
+
 .profile-buttons{
     position:absolute;
-    top:20px;
-    right:30px;
+    top:2rem;
+    right:3rem;
 }
+
 .profile-buttons button{
     background-color: black;
     color: orange;
-    border: 1px solid orange;
-    padding: 10px 20px;
-    border-radius: 5px; /* opcional */
+    border: 0.1rem solid orange;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem; /* opcional */
     cursor: pointer;
 
 }
+
 /* Stats */
+
 .stats{
     display:flex;
-    gap:50px;
-    margin-top:20px;
+    gap:5rem;
+    margin-top:2rem;
+    justify-content:space-between;
 }
+
 .stats div{
     text-align:center;
 }
+
 .stats h3{
     font-size:1.8rem;
+}
+
+.stat{
+    flex:1;
+    border-right:0.1rem solid #333;
+}
+
+.stat:last-child{
+    border-right:none;
 }
 
 /* Register Ema */
@@ -783,10 +818,10 @@ aside {
     background:#1b1b1b;
     padding:3rem;
     border-radius:1rem;
-    box-shadow:0 0 15px rgba(0,0,0,.3);
+    box-shadow:0 0 1.5rem rgba(0,0,0,.3);
 }
 .logo-register{
-    width:120px;
+    width:12rem;
     height:auto;
 }
 .register-title{
@@ -987,8 +1022,8 @@ aside {
         align-items: center;
         gap: 0;
         background: #1c1c1c;
-        border: 1px solid #444;
-        border-radius: 25px;
+        border: 0.1rem solid #444;
+        border-radius: 2.5rem;
         padding: 0.2rem;
     }
 
@@ -997,7 +1032,7 @@ aside {
         min-width: 0;
         padding: 0.9rem 1rem;
         border: none;
-        border-radius: 25px 0 0 25px;
+        border-radius: 2.5rem 0 0 2.5rem;
         background: transparent;
         color: white;
         width: auto;
@@ -1007,7 +1042,7 @@ aside {
         flex-shrink: 0;
         padding: 0.9rem 1rem;
         border: none;
-        border-radius: 0 25px 25px 0;
+        border-radius: 0 2.5rem 2.5rem 0;
         background: transparent;
         color: #aaa;
         cursor: pointer;
@@ -1040,8 +1075,8 @@ aside {
     }
 
     .avatar {
-        width: 45px;
-        height: 45px;
+        width: 4.5rem;
+        height: 4.5rem;
 
         flex-shrink: 0;
     }
@@ -1062,7 +1097,7 @@ aside {
 
     .follow-btn {
         width: auto;
-        min-width: 90px;
+        min-width: 9rem;
 
         padding: 0.6rem 1rem;
 
@@ -1127,8 +1162,8 @@ aside {
         color: orange;
         background:black;
         border-radius: 60%;
-        width: 50px;
-        height: 50px;
+        width: 5rem;
+        height: 5rem;
     }
     
     .main-content-feed{
@@ -1190,141 +1225,13 @@ aside {
 }
 
 
-/* Profile */
-
-
-
-.profile-header{
-    background:#111;
-    border-radius:10px;
-    overflow:hidden;
-    margin-bottom:30px;
-}
-
-.banner{
-    width:100%;
-    height:250px;
-}
-
-.banner img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-/* buttons Ema */
-
-.profile-buttons{
-    position:absolute;
-    top:20px;
-    right:30px;
-}
-
-.button-profile{
-    background-color: black;
-    color: orange;
-    border: 1px solid orange;
-    padding: 10px 20px;
-    border-radius: 5px; /* opcional */
-    cursor: pointer;
-}
-
-.profile-info-container{
-    position:relative;
-    padding:80px 30px 30px;
-}
-
-.profile-avatar{
-    position:absolute;
-    top:-75px;
-    left:30px;
-
-    width:150px;
-    height:150px;
-
-    border-radius:50%;
-    overflow:hidden;
-
-    border:5px solid #111;
-    background:#222;
-}
-
-.profile-avatar img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.profile-data {
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-.profile-data h2{
-    font-size:2rem;
-}
-
-.descripcion{
-    max-width:600px;
-    color:#ccc;
-}
-
-.profile-extra{
-    display:flex;
-    gap:30px;
-    flex-wrap:wrap;
-    color:#aaa;
-}
-
-.profile-buttons{
-    position:absolute;
-    top:20px;
-    right:30px;
-}
-
-.profile-buttons button{
-    background-color: black;
-    color: orange;
-    border: 1px solid orange;
-    padding: 10px 20px;
-    border-radius: 5px; /* opcional */
-    cursor: pointer;
-
-}
-
-/* Stats */
-
-.stats{
-    display:flex;
-    gap:50px;
-    margin-top:20px;
-    justify-content:space-between;
-}
-
-.stats div{
-    text-align:center;
-}
-
-.stats h3{
-    font-size:1.8rem;
-}
-
-.stat{
-    flex:1;
-    border-right:1px solid #333;
-}
-
-.stat:last-child{
-    border-right:none;
-}
 
 /* mediaquerie Profile */
 
 @media (max-width: 768px){
 
     .profile-info-container{
-        padding-top:90px;
+        padding-top:9rem;
         text-align:center;
     }
 
@@ -1335,7 +1242,7 @@ aside {
 
     .profile-buttons{
         position:static;
-        margin-bottom:20px;
+        margin-bottom:2rem;
     }
     .btn-register{
     background-color:orange;
@@ -1348,14 +1255,9 @@ aside {
         justify-content:center;
     }
 
-    .stats{
-        flex-direction:column;
-        gap:15px;
-    }
-
     .post-user{
         flex-direction:column;
-        gap:15px;
+        gap:1.5rem;
     }
 
     .post-user-right{
@@ -1366,10 +1268,24 @@ aside {
     .post-footer-reactions{
         justify-content:center;
     }
+
+    .stats{
+        margin-bottom:2rem;
+    }
+
+    .btn-crear-post {
+        display: none;
+    }
+
+    .btn-editar-perfil {
+        width: 100%;
+        height: 5rem;
+    }
+
 }
 
 /* mediaquierie Register Ema */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
 
     .register-card{
         padding:1.5rem;
@@ -1377,7 +1293,7 @@ aside {
     }
 
     .logo-register{
-        width:80px;
+        width:8rem;
     }
 
     .register-title{
