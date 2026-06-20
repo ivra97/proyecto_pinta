@@ -28,7 +28,6 @@ p {
     font-size: 1.5rem;
     line-height: 1.6;
 }
-/*quitamos los efectos de estilos de la imagen de perfil , boton  */
 .profile img{
     width: 50px;
     border-radius: 50%;
@@ -195,11 +194,6 @@ aside {
     flex-direction: column;
 }
 
-.mobile-text-aside,
-.mobile-only-aside {
-    display: none;
-}
-
 /*  MAIN */
 
 .main-content {
@@ -361,28 +355,22 @@ aside {
     cursor: pointer;
 }
 
-/*   create post   */
 
+/*   create post   */
 .create-post-header {
     background: #000000;
     border-bottom: 1px solid #303030;
     width: calc(100% + 6rem);
     margin-left: -3rem;
     margin-top: -3rem;
-
     height: 5rem;
-
     position: relative;
     display: none;
 }
-
-
-
 .back-button-header {
     position: absolute;
     left: 2rem;
 }
-
 .create-post-form {
     display: flex;
     flex-direction: column;
@@ -398,31 +386,23 @@ aside {
 
     width: 50rem;
 }
-.create-post-form label
-{
+.create-post-form label{
     font-size: 3rem;
-    color: #fff;
-    
-    
+    color: #fff;   
 }
 .create-post-form input,
 .create-post-form textarea {
     width: 100%;
     height: 7rem;
-
     background: #000000;
     border: 0.3rem solid #b9b9b9;
     color: #b9b9b9;
-
     padding: 0  1rem;
-    
 }
-
 .create-post-form textarea {
     min-height: 10rem;
     resize: vertical;
 }
-
 #image-upload {
     border: 0.3rem solid #b9b9b9;
     color: #b9b9b9;
@@ -432,7 +412,6 @@ aside {
     justify-content: center;
     padding-left: 25rem;
 }
-
 .publish-button {
     background-color: #ff8c00;
     color: #000;
@@ -443,9 +422,7 @@ aside {
     align-self: center;
     border-radius: 0.5rem;
     width: 30rem;
-
     transition: transform 0.15s ease;
-
 }
 .publish-button:hover {
     transform: translateY(-2px);
@@ -454,8 +431,8 @@ aside {
     transform: translateY(0);
 }
 
-/*-------------------estilos login de dani--------------------------------------------------------*/
-/* Estructura general del login */
+
+/*login*/
 .flex-login{
     display: flex;
     justify-content: center;
@@ -463,7 +440,6 @@ aside {
     flex-direction: column;
     min-height: 100vh;
 }
-
 .main-login{
     width: 35%;
     height: 50%;
@@ -471,7 +447,6 @@ aside {
     border-radius: 2px;
     border:#ccc solid 2px;
 }   
-
 .logo-login{
     display: block;
     margin: auto;
@@ -479,28 +454,23 @@ aside {
     width: 35%;
     height: 50%;
 }
-
 .welcome-section{ 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20%;
 }
-
-
 .welcome-title{
     text-align: center;
     color: orange;
     font-size: 40px;
 }
-
 .login-form{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 2rem 2rem;
 }
-
 .content-register-1{
     display: flex;
     flex-direction: column;
@@ -508,37 +478,31 @@ aside {
     gap: 0.5rem;
     font-size: 1.5rem;
 }
-
 .colour.register{
     color: #ff8c00;
     text-decoration-color: #ff8c00;
 }
-
 .line-size{
     width: 50%;
     height: 2px;
     margin: 1rem auto;
 }
-
 .colour.register:hover{
     color: black;
 }
-
 .content-register-2{
     text-align: center;
     margin-top: 1rem;
     padding: 1rem;
 }
-
 .content-register-3{
     color: #ff8c00;
 }
-
 .content-register-3:hover{
     color: black;
 }
 
-/* buscar usuarios */
+/* search-profile*/
 .back-btn {
     display: none;
 }
@@ -548,20 +512,17 @@ aside {
     gap: 4rem;
     margin-bottom: 3rem;
 }
-
 .tabs a {
     color: #888;
     text-decoration: none;
     font-size: 1.5rem;
 }
-
 .tabs a.active {
     color: #ff8c00;
-    background: transparent; /*para tapar lo del naranja por ahora*/
+    background: transparent;
     border-bottom: 0.2rem solid #ff8c00;
     padding-bottom: 0.5rem;
 }
-
 .person-list {
     width: 90%;
     max-width: 120rem;
@@ -570,7 +531,6 @@ aside {
     flex-direction: column;
     gap: 1.5rem;
 }
-
 .person-card {
     display: flex;
     align-items: center;
@@ -579,27 +539,22 @@ aside {
     padding: 1rem ;
     border: 0.1rem solid #2e2e2e;
 }
-
 .avatar {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
     background: #444;
 }
-
 .person-info {
     flex: 1;
     margin-left: 2rem;
 }
-
 .person-info h3 {
     margin-bottom: 0.5rem;
 }
-
 .person-info p {
     color: #9e9e9e;
 }
-
 .follow-btn {
     background: none;
     border: 0.2rem solid #ff8c00;
@@ -608,19 +563,16 @@ aside {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .follow-btn:hover {
     background: #ff8c00;
     color: black;
 }
-
 .profile-avatar {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     background: #444;
 }
-
 .main--header--search 
 .main--content--search {
     display: flex;
@@ -628,8 +580,7 @@ aside {
     gap: 1rem;
 }
 
-
-/* feed abdias*/
+/* feed */
 .main-feed{
     display: flex;
     flex-direction: column;
@@ -644,7 +595,6 @@ aside {
     align-items: center;
     padding: 1rem;  
 }
-
 .feed-top button {   
     border: none;
     width: 200px;
@@ -654,12 +604,10 @@ aside {
     color: white;
     background-color: #000;
 }
-
 .feed-top button:hover {
     color: orange;
     border-bottom: 3px solid orange;
 }
-
 .feed-middle{
     width: 60%;
     background-color:black;
@@ -668,7 +616,6 @@ aside {
     margin-bottom: 2rem;
     background-color:#2b2b2b;
     padding: 0 1rem;
-
 }
 .feed-post-top{
     display: flex;
@@ -677,7 +624,6 @@ aside {
     color: white;
     justify-content:space-between;    
     border-bottom : 2px solid white;
-
 }
 .post-user-left{
     display: flex;
@@ -693,37 +639,31 @@ aside {
     justify-content: flex-end;
     padding: 0.5rem 1rem;
 }
-
 .dropdown {
     font-size: 2rem;
     cursor: pointer;
 }
-
 .feed-post-middle{
     color: white;
     display: flex;
     flex-direction: column;
     padding: 0.8rem;
 }
-
 .feed-post-middle img{
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
-
 .feed-post-bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
 }
-
 .feed-post-bottom-reactions{
     display: flex;
     gap: 1rem;
 }
-
 .feed-post-bottom-reactions button{
     border: none;
     background-color: transparent;
@@ -737,6 +677,144 @@ aside {
     font-size: 1.5rem;
     color: #ccc;
     
+}
+
+/* Profile */
+.profile-header{
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:30px;
+}
+.banner{
+    width:100%;
+    height:250px;
+}
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+/* buttons Ema */
+.profile-buttons{
+    position:absolute;
+    top:20px;
+    right:30px;
+}
+.button-profile{
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-info-container{
+    position:relative;
+    padding:80px 30px 30px;
+}
+.profile-avatar{
+    position:absolute;
+    top:-75px;
+    left:30px;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #111;
+    background:#222;
+}
+.profile-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.profile-data {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.profile-data h2{
+    font-size:2rem;
+}
+.descripcion{
+    max-width:600px;
+    color:#ccc;
+}
+.profile-extra{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    color:#aaa;
+}
+.profile-buttons{
+    position:absolute;
+    top:20px;
+    right:30px;
+}
+.profile-buttons button{
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px 20px;
+    border-radius: 5px; /* opcional */
+    cursor: pointer;
+
+}
+/* Stats */
+.stats{
+    display:flex;
+    gap:50px;
+    margin-top:20px;
+}
+.stats div{
+    text-align:center;
+}
+.stats h3{
+    font-size:1.8rem;
+}
+
+/* Register Ema */
+.register-page{
+    background-color:#0f0f0f;
+    min-height:100vh;
+}
+.register-card{
+    background:#1b1b1b;
+    padding:3rem;
+    border-radius:1rem;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+.logo-register{
+    width:120px;
+    height:auto;
+}
+.register-title{
+    color:white;
+    margin-bottom:2rem;
+}
+.btn-register{
+    background-color:orange;
+    color:black;
+    font-weight:bold;
+    border:none;
+}
+.btn-register:hover{
+    background-color:#ffb347;
+}
+.login-link{
+    margin-top:1.5rem;
+}
+.login-link p{
+    color:white;
+    margin-bottom:.5rem;
+}
+.login-link a{
+    color:orange;
+    text-decoration:none;
+}
+.form-check-label{
+    color: white;
 }
 
 /*  RESPONSIVE privacy  */
@@ -781,8 +859,6 @@ aside {
 
     }
 }
-
-
 
 /* responsive create post */
 @media (max-width: 768px) {
@@ -838,7 +914,7 @@ aside {
     }
 }
 
-/* responsive para pantallas menores a 786px, ajustando el tamaño del contenedor principal del login */
+/* responsive login */
 @media screen and (max-width: 786px){
     .main-login{
         width: 90%;
@@ -854,7 +930,6 @@ aside {
     .clase-especial-dani{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-
         grid-template-areas:
             "header"
             "main";
@@ -868,65 +943,49 @@ aside {
     .main--header--profile {
         display: flex;
         flex-wrap: wrap;
-
         align-items: center;
         justify-content: space-between;
-
         padding: 1rem;
         height: 100%;
     }
 
-  
     .back-btn {
         display: block;
-
         color: white;
         font-size: 2rem;
-
         text-decoration: none;
     }
-
   
     .profile {
         display: none;
     }
-
   
     .title-header-search {
         font-size: 0;
-
         flex: 1;
         text-align: center;
-
         margin: 0;
     }
 
     .title-header-search::after {
         content: "Buscar Usuarios";
-
         font-size: 2rem;
         font-weight: bold;
-
         color: #ff8c00;
-
         white-space: nowrap;
     }
 
   
     .search-main-user {
         order: 4;
-
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-
         margin-top: 1rem;
         margin-bottom: 2.75rem;
-
         display: flex;
         align-items: center;
         gap: 0;
-
         background: #1c1c1c;
         border: 1px solid #444;
         border-radius: 25px;
@@ -936,12 +995,9 @@ aside {
     .search-main-user input {
         flex: 1;
         min-width: 0;
-
         padding: 0.9rem 1rem;
-
         border: none;
         border-radius: 25px 0 0 25px;
-
         background: transparent;
         color: white;
         width: auto;
@@ -950,28 +1006,22 @@ aside {
     .search-main-user button {
         flex-shrink: 0;
         padding: 0.9rem 1rem;
-
         border: none;
         border-radius: 0 25px 25px 0;
-
         background: transparent;
         color: #aaa;
-
         cursor: pointer;
     }
 
-  
     .tabs {
         display: none;
     }
-
   
     .main--content--search {
         width: 100%;
         margin: 0;
         padding: 3.5rem 1rem 1rem;
     }
-
   
     .person-list {
         width: 90%;
@@ -1318,61 +1368,7 @@ aside {
     }
 }
 
-/* Register Ema */
-
-.register-page{
-    background-color:#0f0f0f;
-    min-height:100vh;
-}
-
-.register-card{
-    background:#1b1b1b;
-    padding:3rem;
-    border-radius:1rem;
-    box-shadow:0 0 15px rgba(0,0,0,.3);
-}
-
-.logo-register{
-    width:120px;
-    height:auto;
-}
-
-.register-title{
-    color:white;
-    margin-bottom:2rem;
-}
-
-.btn-register{
-    background-color:orange;
-    color:black;
-    font-weight:bold;
-    border:none;
-}
-
-.btn-register:hover{
-    background-color:#ffb347;
-}
-
-.login-link{
-    margin-top:1.5rem;
-}
-
-.login-link p{
-    color:white;
-    margin-bottom:.5rem;
-}
-
-.login-link a{
-    color:orange;
-    text-decoration:none;
-}
-
-.form-check-label{
-    color: white;
-}
-
 /* mediaquierie Register Ema */
-
 @media screen and (max-width: 576px){
 
     .register-card{
@@ -1408,6 +1404,4 @@ aside {
     .btn-crear-post {
     display: none;
     }
-    
-
 }
