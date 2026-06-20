@@ -1249,6 +1249,7 @@ aside {
     display:flex;
     gap:50px;
     margin-top:20px;
+    justify-content:space-between;
 }
 
 .stats div{
@@ -1257,6 +1258,15 @@ aside {
 
 .stats h3{
     font-size:1.8rem;
+}
+
+.stat{
+    flex:1;
+    border-right:1px solid #333;
+}
+
+.stat:last-child{
+    border-right:none;
 }
 
 /* mediaquerie Profile */
