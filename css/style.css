@@ -194,6 +194,36 @@ aside {
     flex-direction: column;
 }
 
+.animation-welcome {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.2rem solid #FF8C00;
+    animation: animation-welcome 5s steps(18) infinite alternate, blink 0.5s infinite;
+}
+
+@keyframes animation-welcome {
+    0% {
+        width: 0;
+    }
+    40% {
+        width: 100%;
+    }
+     60% {
+        width: 100%;
+    }
+        100% {
+            width: 0;
+        }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 /*  MAIN */
 
 .main-content {
@@ -715,7 +745,7 @@ aside {
     color: orange;
     border: 0.1rem solid orange;
     padding: 1rem 2rem;
-    border-radius: 0.5rem; /* opcional */
+    border-radius: 0.5rem; 
     cursor: pointer;
 }
 
@@ -778,7 +808,7 @@ aside {
     color: orange;
     border: 0.1rem solid orange;
     padding: 1rem 2rem;
-    border-radius: 0.5rem; /* opcional */
+    border-radius: 0.5rem; 
     cursor: pointer;
 
 }
@@ -1172,7 +1202,6 @@ aside {
     .main-footer-feed{
         display: none;
     }
-    /*empezamos con header*/
     .main-header-feed{
         align-items: center;
         display: grid;
@@ -1201,7 +1230,7 @@ aside {
     .profile{
         display: none;
     }
-  /*mian feed*/
+    /*main feed*/
     .main-feed{
         width: 100%;
     }
@@ -1226,7 +1255,7 @@ aside {
 
 
 
-/* mediaquerie Profile */
+/* Responsive Profile */
 
 @media (max-width: 768px){
 
@@ -1284,7 +1313,7 @@ aside {
 
 }
 
-/* mediaquierie Register Ema */
+/* Responsive Register Ema */
 @media screen and (max-width: 768px){
 
     .register-card{
