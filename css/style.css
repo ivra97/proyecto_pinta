@@ -133,8 +133,8 @@ aside {
     flex-direction: column;
 }
 
-.nav-top,
-.nav-bottom {
+.nav-top--aside,
+.nav-bottom--aside  {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -188,8 +188,8 @@ aside {
     background-color: orange;
 }
 
-.nav-top-aside,
-.nav-bottom-aside {
+.nav-top--aside,
+.nav-bottom--aside {
     display: flex;
     flex-direction: column;
 }
@@ -894,8 +894,8 @@ aside {
     }
 
     .asidebar--privacy-policy,
-    .footer--privacy-policy,
-    .header--privacy-policy {
+    .main-footer--privacy-policy,
+    .main-header--privacy-policy {
         display: none;
     }
 

@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pinta - Crear Publicacion</title>
+    <meta name="keywords" content="crear publicación, publicar contenido, foro de videojuegos, comunidad gamer, videojuegos,
+    compartir imágenes, compartir experiencias, publicaciones gaming, reseñas de videojuegos, opiniones de jugadores, capturas de pantalla, 
+    juegos online, videojuegos multijugador, comunidad de jugadores, contenido gamer, crear post, videojuegos PC, videojuegos consola, videojuegos móviles, 
+    PINTA">
+
+    <meta name="description" content="Creá una nueva publicación en PINTA para compartir imágenes, opiniones y experiencias sobre tus videojuegos favoritos.">
+    <title>Crear Publicacion | PINTA</title>
     <link rel="icon" href="img/logo.pinta.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +26,8 @@
 
         <aside class="asidebar asidebar--create-post">
             <nav class="navbar-aside sidebar-nav">
-                <div class="nav-top-aside nav-top">
+                
+                <div class="nav-top nav-top--aside">
                     <a href="feed.html">
                         <i class="fa-regular fa-house"></i>
                         <span class="desktop-text-aside">Inicio</span>
@@ -39,7 +46,7 @@
 
                 <hr>
 
-                <div class="nav-bottom-aside nav-bottom">
+                <div class="nav-bottom nav-bottom--aside">
                     <a href="privacy-policy.html">
                         <i class="fa-regular fa-file-lines"></i>
                         <span class="desktop-text-aside">Politica de uso</span>
@@ -55,7 +62,7 @@
         <main class="main-content main-content--create-post">
             <div class="create-post-container">
                 <div class="create-post-header">
-                    <a href="profile.html" class="back-button-header ">
+                    <a href="profile.html" class="back-button-header" aria-label="Go back to profile">
                         <i class="fa-solid fa-arrow-left"></i>
                     </a>
                     <h2>Crear Publicacion</h2>
@@ -74,7 +81,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="image">Imagen</label>
+                        <label for="image-upload">Imagen</label>
                         <input
                             type="file"
                             id="image-upload"
