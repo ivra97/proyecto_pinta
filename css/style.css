@@ -518,7 +518,8 @@ aside {
     margin: 1rem auto;
 }
 .primary-color:hover{
-    color: black;
+    color: rgb(21, 21, 199);
+    text-decoration: underline;
 }
 .privacy-policy-text{
     text-align: center;
