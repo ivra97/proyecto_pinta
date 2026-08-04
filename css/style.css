@@ -492,7 +492,7 @@ aside {
 }
 .welcome-title{
     text-align: center;
-    color: orange;
+    color: #ff8c00;
     font-size: 4rem;
 }
 .login-form{
@@ -501,14 +501,14 @@ aside {
     gap: 2rem;
     padding: 2rem 2rem;
 }
-.content-register-1{
+.register-box{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     font-size: 1.5rem;
 }
-.colour.register{
+.primary-color{
     color: #ff8c00;
     text-decoration-color: #ff8c00;
 }
@@ -517,19 +517,14 @@ aside {
     height: 0.2rem;
     margin: 1rem auto;
 }
-.colour.register:hover{
-    color: black;
+.primary-color:hover{
+    color: rgb(21, 21, 199);
+    text-decoration: underline;
 }
-.content-register-2{
+.privacy-policy-text{
     text-align: center;
     margin-top: 1rem;
     padding: 1rem;
-}
-.content-register-3{
-    color: #ff8c00;
-}
-.content-register-3:hover{
-    color: black;
 }
 
 /* search-profile*/
