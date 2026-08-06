@@ -981,7 +981,12 @@ aside {
         height: auto;
         background-color: black;
         border:none;
+        
     }
+    .primary-color {
+    color: #ffb300;
+    }
+
 }
 
 /* media query search profile */
