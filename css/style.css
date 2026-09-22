@@ -1,3 +1,11 @@
+﻿:root {
+  --color-primary: #FF8C00;   /* naranja de marca â€” CTA, links, acentos, active states */
+  --color-bg: #000000;        /* fondo base de toda la app */
+  --color-surface: #1A1A1A;   /* tarjetas, header, sidebar, footer, inputs */
+  --color-text: #FFFFFF;      /* texto principal */
+  --color-text-muted: #A0A0A0; /* texto secundario â€” fechas, descripciones, placeholders */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,20 +13,86 @@
     list-style: none;
 }
 
+button,
+.btn,
+.btn-warning,
+.btn-register {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+button:hover,
+.btn:hover,
+.btn-warning:hover,
+.btn-register:hover,
+button:focus,
+.btn:focus,
+.btn-warning:focus,
+.btn-register:focus {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.form-control,
+.input-group-text {
+    background-color: var(--color-surface);
+    border-color: var(--color-text-muted);
+    color: var(--color-text);
+}
+
+.register-card .form-control,
+.register-card .input-group-text {
+    background-color: var(--color-surface);
+    border-color: var(--color-text-muted);
+    color: var(--color-text);
+}
+
+.form-control::placeholder {
+    color: var(--color-text-muted);
+}
+
+.register-card .form-control::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-control:focus {
+    background-color: var(--color-surface);
+    border-color: var(--color-primary);
+    color: var(--color-text);
+    box-shadow: none;
+}
+
+.register-card .form-control:focus {
+    background-color: var(--color-surface);
+    border-color: var(--color-primary);
+    color: var(--color-text);
+    box-shadow: none;
+}
+
+.input-group-text {
+    color: var(--color-text-muted);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-primary);
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
-    background: black;
-    color: white;
+    background: var(--color-bg);
+    color: var(--color-text);
     font-family: 'Lato', sans-serif;
-    background-color: #000;
+    background-color: var(--color-bg);
     min-height: 100vh;
     overflow: hidden;
 }
 
-/* ================= TIPOGRAFÍA ================= */
+/* ================= TIPOGRAFÃA ================= */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -33,7 +107,7 @@ p {
     border-radius: 50%;
 }
 a {
-    color: white;
+    color: var(--color-text);
     text-decoration: none;
 }
 
@@ -64,8 +138,8 @@ a {
 
     padding: 0 2rem;
 
-    background-color: #1A1A1A;
-    border-bottom: 0.1rem solid #303030;
+    background-color: var(--color-surface);
+    border-bottom: 0.1rem solid var(--color-text-muted);
 }
 
 
@@ -77,7 +151,7 @@ a {
 
     font-size: 2.8rem;
     font-weight: 800;
-    color: #FF8C00;
+    color: var(--color-primary);
     letter-spacing: 0.1rem;
 }
 
@@ -93,7 +167,7 @@ a {
     height: 4rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 0.1rem solid #303030;
+    border: 0.1rem solid var(--color-text-muted);
 }
 
 .profile-logo-image {
@@ -114,15 +188,15 @@ aside {
 
 .asidebar {
     height: 100%;
-    background: #1A1A1A;
-    border-right: 0.1rem solid #303030;
+    background: var(--color-surface);
+    border-right: 0.1rem solid var(--color-text-muted);
     padding: 2rem;
 }
 .sidebar-nav hr {
     margin: 3rem 0 2rem;
     height: 0.1rem;
     border: none;
-    background: #303030;
+    background: var(--color-text-muted);
     opacity: 0.8;
     width: 100%;
 } 
@@ -151,19 +225,19 @@ aside {
     padding: 1.2rem;
     border-radius: 0.8rem;
     text-decoration: none;
-    color: #fff;
+    color: var(--color-text);
     font-size: 1.5rem;
     transition: 0.3s;
 }
 
 .nav-item:hover {
-    background: #FF8C00;
-    color: #000;
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 
 .active {
-    background: #FF8C00;
-    color: #000;
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 
 .navbar-aside {
@@ -185,7 +259,7 @@ aside {
 }
 
 .navbar-aside a:hover {
-    background-color: orange;
+    background-color: var(--color-primary);
 }
 
 .nav-top--aside,
@@ -199,7 +273,7 @@ aside {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 0.2rem solid #FF8C00;
+    border-right: 0.2rem solid var(--color-primary);
     animation: animation-welcome 5s steps(18) infinite alternate, blink 0.5s infinite;
 }
 
@@ -229,8 +303,8 @@ aside {
 .main-content {
     grid-area: main;
 
-    background: #000;
-    color: #fff;
+    background: var(--color-bg);
+    color: var(--color-text);
 
     padding: 3rem;
     overflow-y: auto;
@@ -239,7 +313,7 @@ aside {
 
 
 .privacy-container {
-    background: #1A1A1A;
+    background: var(--color-surface);
     padding: 3.5rem;
     border-radius: 1rem;
 
@@ -255,12 +329,12 @@ aside {
 .privacy-container > h2 {
     font-size: 2.6rem;
     font-weight: 800;
-    color: #fff;
+    color: var(--color-text);
 }
 
 /* Datetime */
 .updated {
-    color: #B0B0B0;
+    color: var(--color-text-muted);
     font-size: 1.4rem;
 }
 
@@ -272,14 +346,14 @@ aside {
 }
 
 .bg-title h2 {
-    color: #FF8C00;
+    color: var(--color-primary);
     font-size: 1.9rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .bg-title p {
-    color: #E0E0E0;
+    color: var(--color-text-muted);
     font-size: 1.5rem;
     line-height: 1.7;
 }
@@ -296,8 +370,8 @@ aside {
     border: none;
     border-radius: 1rem;
 
-    background: #FF8C00;
-    color: #000;
+    background: var(--color-primary);
+    color: var(--color-bg);
 
     font-size: 1.6rem;
     font-weight: bold;
@@ -323,13 +397,13 @@ aside {
     justify-content: center;
     align-items: center;
 
-    background: #1A1A1A;
-    border-top: 0.1rem solid #303030;
+    background: var(--color-surface);
+    border-top: 0.1rem solid var(--color-text-muted);
 }
 
 .main-footer p,
 .main-footer a {
-    color: #fff;
+    color: var(--color-text);
     font-size: 1.3rem;
     text-decoration: none;
 }
@@ -346,7 +420,7 @@ aside {
 }
 
 .title-header {
-    color: orange;
+    color: var(--color-primary);
     font-size: 3rem;
     font-weight: bold;
 }
@@ -357,7 +431,7 @@ aside {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #2b2b2b;
+    background-color: var(--color-surface);
     border-radius: 2.5rem;
     padding: 1rem 1rem;
     justify-content: space-between;
@@ -368,19 +442,19 @@ aside {
     border: none;
     outline: none;
     background: transparent;
-    color: white;
+    color: var(--color-text);
     font-size: 1.5rem;
     width: 25rem;
 }
 
 .search-header input::placeholder {
-    color: white;
+    color: var(--color-text);
 }
 
 .search-header button {
     border: none;
     background: transparent;
-    color: white;
+    color: var(--color-text);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -388,8 +462,8 @@ aside {
 
 /*   create post   */
 .create-post-header {
-    background: #000000;
-    border-bottom: 0.1rem solid #303030;
+    background: var(--color-bg);
+    border-bottom: 0.1rem solid var(--color-text-muted);
     width: calc(100% + 6rem);
     margin-left: -3rem;
     margin-top: -3rem;
@@ -418,15 +492,15 @@ aside {
 }
 .create-post-form label{
     font-size: 3rem;
-    color: #fff;   
+    color: var(--color-text);   
 }
 .create-post-form input,
 .create-post-form textarea {
     width: 100%;
     height: 7rem;
-    background: #000000;
-    border: 0.3rem solid #b9b9b9;
-    color: #b9b9b9;
+    background: var(--color-bg);
+    border: 0.3rem solid var(--color-text-muted);
+    color: var(--color-text);
     padding: 0  1rem;
 }
 .create-post-form textarea {
@@ -434,8 +508,8 @@ aside {
     resize: vertical;
 }
 #image-upload {
-    border: 0.3rem solid #b9b9b9;
-    color: #b9b9b9;
+    border: 0.3rem solid var(--color-text-muted);
+    color: var(--color-text);
     padding: 1rem;
 }
 .main-header--create-post {
@@ -443,9 +517,9 @@ aside {
     padding-left: 25rem;
 }
 .publish-button {
-    background-color: #ff8c00;
-    color: #000;
-    border: 0.3rem solid #b9b9b9;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border: 0.3rem solid var(--color-text-muted);
     padding: 1.2rem 3rem;
     font-size: 1.6rem;
     cursor: pointer;
@@ -473,9 +547,9 @@ aside {
 .main-login{
     width: 35%;
     height: 50%;
-    background-color: #2b2b2b;
+    background-color: var(--color-surface);
     border-radius: 2rem;
-    border:#ccc solid 0.2rem;
+    border: var(--color-text-muted) solid 0.2rem;
 }   
 .logo-login{
     display: block;
@@ -492,7 +566,7 @@ aside {
 }
 .welcome-title{
     text-align: center;
-    color: #ff8c00;
+    color: var(--color-primary);
     font-size: 4rem;
 }
 .login-form{
@@ -509,8 +583,8 @@ aside {
     font-size: 1.5rem;
 }
 .primary-color{
-    color: #ff8c00;
-    text-decoration-color: #ff8c00;
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
 }
 .line-size{
     width: 50%;
@@ -518,7 +592,7 @@ aside {
     margin: 1rem auto;
 }
 .primary-color:hover{
-    color: rgb(21, 21, 199);
+    color: var(--color-primary);
     text-decoration: underline;
 }
 .privacy-policy-text{
@@ -538,14 +612,14 @@ aside {
     margin-bottom: 3rem;
 }
 .tabs a {
-    color: #888;
+    color: var(--color-text-muted);
     text-decoration: none;
     font-size: 1.5rem;
 }
 .tabs a.active {
-    color: #ff8c00;
+    color: var(--color-primary);
     background: transparent;
-    border-bottom: 0.2rem solid #ff8c00;
+    border-bottom: 0.2rem solid var(--color-primary);
     padding-bottom: 0.5rem;
 }
 .person-list {
@@ -560,15 +634,15 @@ aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #181818;
+    background: var(--color-surface);
     padding: 1rem ;
-    border: 0.1rem solid #2e2e2e;
+    border: 0.1rem solid var(--color-text-muted);
 }
 .avatar {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    background: #444;
+    background: var(--color-surface);
 }
 .person-info {
     flex: 1;
@@ -578,25 +652,25 @@ aside {
     margin-bottom: 0.5rem;
 }
 .person-info p {
-    color: #9e9e9e;
+    color: var(--color-text-muted);
 }
 .follow-btn {
     background: none;
-    border: 0.2rem solid #ff8c00;
-    color: #ff8c00;
+    border: 0.2rem solid var(--color-primary);
+    color: var(--color-primary);
     padding: 1rem 2.5rem;
     cursor: pointer;
     transition: 0.3s;
 }
 .follow-btn:hover {
-    background: #ff8c00;
-    color: black;
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 .profile-avatar {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background: #444;
+    background: var(--color-surface);
 }
 .main--header--search 
 .main--content--search {
@@ -625,30 +699,30 @@ aside {
     width: 20rem;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
-    border-bottom: 0.3rem solid #2d2b2b;
-    color: white;
-    background-color: #000;
+    border-bottom: 0.3rem solid var(--color-surface);
+    color: var(--color-text);
+    background-color: var(--color-bg);
 }
 .feed-top button:hover {
-    color: orange;
-    border-bottom: 0.3rem solid orange;
+    color: var(--color-primary);
+    border-bottom: 0.3rem solid var(--color-primary);
 }
 .feed-middle{
     width: 60%;
-    background-color:black;
+    background-color: var(--color-bg);
 }
 .feed-article{
     margin-bottom: 2rem;
-    background-color:#2b2b2b;
+    background-color: var(--color-surface);
     padding: 0 1rem;
 }
 .feed-post-top{
     display: flex;
     align-items: center;
     width: 100%;
-    color: white;
+    color: var(--color-text);
     justify-content:space-between;    
-    border-bottom : 0.2rem solid white;
+    border-bottom : 0.2rem solid var(--color-text);
 }
 .post-user-left{
     display: flex;
@@ -669,7 +743,7 @@ aside {
     cursor: pointer;
 }
 .feed-post-middle{
-    color: white;
+    color: var(--color-text);
     display: flex;
     flex-direction: column;
     padding: 0.8rem;
@@ -692,7 +766,7 @@ aside {
 .feed-post-bottom-reactions button{
     border: none;
     background-color: transparent;
-    color: white;
+    color: var(--color-text);
     cursor: pointer;
     border-radius: 1rem;
     padding: 1rem 0;
@@ -700,7 +774,7 @@ aside {
 }
 .game-name{
     font-size: 1.5rem;
-    color: #ccc;
+    color: var(--color-text-muted);
     
 }
 
@@ -710,7 +784,7 @@ aside {
 
 
 .profile-header{
-    background:#111;
+    background: var(--color-surface);
     border-radius:1rem;
     overflow:hidden;
     margin-bottom:3rem;
@@ -736,9 +810,9 @@ aside {
 }
 
 .button-profile{
-    background-color: black;
-    color: orange;
-    border: 0.1rem solid orange;
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    border: 0.1rem solid var(--color-primary);
     padding: 1rem 2rem;
     border-radius: 0.5rem; 
     cursor: pointer;
@@ -760,8 +834,8 @@ aside {
     border-radius:50%;
     overflow:hidden;
 
-    border:0.5rem solid #111;
-    background:#222;
+    border: 0.5rem solid var(--color-surface);
+    background: var(--color-surface);
 }
 
 .profile-avatar img{
@@ -782,14 +856,14 @@ aside {
 
 .descripcion{
     max-width:60rem;
-    color:#ccc;
+    color: var(--color-text-muted);
 }
 
 .profile-extra{
     display:flex;
     gap:3rem;
     flex-wrap:wrap;
-    color:#aaa;
+    color: var(--color-text-muted);
 }
 
 .profile-buttons{
@@ -799,9 +873,9 @@ aside {
 }
 
 .profile-buttons button{
-    background-color: black;
-    color: orange;
-    border: 0.1rem solid orange;
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    border: 0.1rem solid var(--color-primary);
     padding: 1rem 2rem;
     border-radius: 0.5rem; 
     cursor: pointer;
@@ -827,7 +901,7 @@ aside {
 
 .stat{
     flex:1;
-    border-right:0.1rem solid #333;
+    border-right: 0.1rem solid var(--color-text-muted);
 }
 
 .stat:last-child{
@@ -836,45 +910,45 @@ aside {
 
 /* Register Ema */
 .register-page{
-    background-color:#0f0f0f;
+    background-color: var(--color-bg);
     min-height:100vh;
 }
 .register-card{
-    background:#1b1b1b;
+    background: var(--color-surface);
     padding:3rem;
     border-radius:1rem;
-    box-shadow:0 0 1.5rem rgba(0,0,0,.3);
+    box-shadow: none;
 }
 .logo-register{
     width:12rem;
     height:auto;
 }
 .register-title{
-    color:white;
+    color: var(--color-text);
     margin-bottom:2rem;
 }
 .btn-register{
-    background-color:orange;
-    color:black;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
     font-weight:bold;
     border:none;
 }
 .btn-register:hover{
-    background-color:#ffb347;
+    background-color: var(--color-primary);
 }
 .login-link{
     margin-top:1.5rem;
 }
 .login-link p{
-    color:white;
+    color: var(--color-text);
     margin-bottom:.5rem;
 }
 .login-link a{
-    color:orange;
+    color: var(--color-primary);
     text-decoration:none;
 }
 .form-check-label{
-    color: white;
+    color: var(--color-text);
 }
 
 /*  RESPONSIVE privacy  */
@@ -904,7 +978,7 @@ aside {
     }
 
     .privacy-title-header {
-        color: #FF8C00;
+        color: var(--color-primary);
     }
     
 
@@ -956,7 +1030,7 @@ aside {
         padding: 1rem;
         font-size: 2.2rem;
 
-        color: #FF8C00;
+        color: var(--color-primary);
     }
 
     .back-button-header {
@@ -979,7 +1053,7 @@ aside {
     .main-login{
         width: 90%;
         height: auto;
-        background-color: black;
+        background-color: var(--color-bg);
         border:none;
     }
 }
@@ -1002,7 +1076,7 @@ aside {
     
 
     .main--header--profile {
-        background: #000;
+        background: var(--color-bg);
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1014,7 +1088,7 @@ aside {
 
     .back-btn {
         display: block;
-        color: white;
+        color: var(--color-text);
         font-size: 2rem;
         text-decoration: none;
     }
@@ -1034,7 +1108,7 @@ aside {
         content: "Buscar Usuarios";
         font-size: 2rem;
         font-weight: bold;
-        color: #ff8c00;
+        color: var(--color-primary);
         white-space: nowrap;
     }
 
@@ -1050,7 +1124,7 @@ aside {
         align-items: center;
         justify-content: flex-start;
         gap: 0;
-        border: 0.1rem solid #444;
+        border: 0.1rem solid var(--color-text-muted);
         border-radius: 2.5rem;
         padding: 0.18rem;
     }
@@ -1062,7 +1136,7 @@ aside {
         border: none;
         border-radius: 2.5rem 0 0 2.5rem;
         background: transparent;
-        color: white;
+        color: var(--color-text);
         width: auto;
         display: block;
     }
@@ -1078,24 +1152,24 @@ aside {
         padding: 0.6rem 0.9rem;
         border: none;
         border-radius: 0 2.5rem 2.5rem 0;
-        background: #444; /* botón gris */
-        color: #fff;
+        background: var(--color-text-muted); /* botÃ³n gris */
+        color: var(--color-text);
         cursor: pointer;
     }
     
     
     .main--header--profile .search-main-user.search-header {
-        background: #1d1d1d;
-        border-color: #444;
+        background: var(--color-surface);
+        border-color: var(--color-text-muted);
     }
 
     .main--header--profile .search-main-user.search-header button {
-        background: #1d1d1d;
-        color: #fff;
+        background: var(--color-surface);
+        color: var(--color-text);
     }
 
     .main--header--profile .search-main-user.search-header button i {
-        color: #fff;
+        color: var(--color-text);
     }
 
     .main--header--profile .search-main-user.search-header input {
@@ -1212,8 +1286,8 @@ aside {
     }
     .create-btn-icon{
         font-size:5rem ;
-        color: orange;
-        background:black;
+        color: var(--color-primary);
+        background: var(--color-bg);
         border-radius: 60%;
         width: 5rem;
         height: 5rem;
@@ -1297,8 +1371,8 @@ aside {
         margin-bottom:2rem;
     }
     .btn-register{
-    background-color:orange;
-    color:black;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
     font-weight:bold;
     border:none;
     }
