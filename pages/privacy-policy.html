@@ -10,7 +10,7 @@
     <meta name="description" content="Conocé la política de privacidad de PINTA y cómo se recopilan, utilizan y protegen los datos de los usuarios.">    
     <title>Políticas de privacidad | PINTA</title>
 
-    <link rel="icon" href="img/logo.pinta.png" type="image/x-icon" />
+    <link rel="icon" href="../img/logo.pinta.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -19,7 +19,7 @@
     <script src="https://kit.fontawesome.com/9d24d76722.js" crossorigin="anonymous"></script>
 
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -31,10 +31,9 @@
         
             <div class="profile-logo">
                 <a href="profile.html">
-                    <img src="img/avatar.pinta1111.png" alt="Profile logo" class="profile-logo-image">
+                    <img src="../img/avatar.pinta1111.png" alt="Profile logo" class="profile-logo-image">
                 </a>
             </div>
-
         </header>
 
         <aside class="asidebar asidebar--privacy-policy">
@@ -58,11 +57,15 @@
 
                 <hr>
                 <div class="nav-bottom nav-bottom-aside">
+                    <button class="button-mode" id="mode">
+                        <i class="fa-solid fa-moon"></i>
+                        <span class="desktop-text-aside">Modo Oscuro</span>
+                    </button>
                     <a href="privacy-policy.html" class="nav-item active">
                         <i class="fa-regular fa-file-lines"></i>
                         <span class="desktop-text-aside">Políticas de privacidad</span>
                     </a>
-                    <a href="index.html" class="nav-item">
+                    <a href="../index.html" class="nav-item">
                         <i class="fa-solid fa-right-from-bracket"></i>
                         <span class="desktop-text-aside">Cerrar sesión</span>
                     </a>
@@ -74,10 +77,13 @@
         <main class="main-content main-content--privacy-policy">
             
             <div class="privacy-title-header">
-                        <a href="index.html" class="back-button-header" aria-label="Go back to feed">
+                        <a href="../index.html" class="back-button-header" aria-label="Go back to feed">
                             <i class="fa-solid fa-arrow-left"></i>
                         </a>
                         <h2 class="privacy-title-header">Políticas de privacidad</h2>
+                        <button class="button-mode button-mode-compact mobile-page-mode">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
                     </div>
             
 
@@ -156,4 +162,5 @@
     </div>
 
 </body>
+<script type="module" src="../js/mode.js"></script>
 </html>

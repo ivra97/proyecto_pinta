@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Administra tu perfil en PINTA, personaliza tu informacion, comparti tus intereses gamer, comparti el juego que te apasiona, y conecta con la comunidad del foro."
+    />
+    <meta
+      name="keywords"
+      content="PINTA, perfil, perfil de usuario, cominidad gamer, foro gamer, videojuegos, gamers, cuenta, publicaciones, gaming."
+    />
+    <title>Mi Perfil | Pinta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../img/logo.pinta.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/9d24d76722.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="grid-container grid-container-feed">
+      <header class="main-header main-header-feed">
+        <button class="button-mode button-mode-compact mobile-page-mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <h1 class="title-header">PINTA</h1>
+      </header>
+
+      <aside class="asidebar asidebar-feed">
+        <nav class="sidebar-nav">
+          <div class="nav-top-aside nav-top">
+            <a href="feed.html" class="nav-item">
+              <i class="fa-regular fa-house"></i>
+              <span class="desktop-text-aside">Inicio</span>
+            </a>
+
+            <a href="search-profile.html" class="nav-item">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span class="desktop-text-aside">Buscar Usuarios</span>
+            </a>
+          </div>
+
+          <hr />
+
+          <div class="nav-bottom-aside nav-bottom">
+            <button class="button-mode" id="mode">
+              <i class="fa-solid fa-moon"></i>
+              <span class="desktop-text-aside">Modo Oscuro</span>
+            </button>
+            <a href="privacy-policy.html" class="nav-item">
+              <i class="fa-regular fa-file-lines"></i>
+              <span class="desktop-text-aside">Políticas de privacidad</span>
+            </a>
+            <a href="../index.html" class="logout-link nav-item">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span class="desktop-text-aside">Cerrar sesión</span>
+            </a>
+          </div>
+        </nav>
+      </aside>
+
+      <aside class="navbar-mobile">
+        <a href="feed.html">
+          <i class="fa-solid fa-house icon-mobile"></i>
+          <span>Inicio</span>
+        </a>
+        <a href="search-profile.html">
+          <i class="fa-solid fa-magnifying-glass icon-mobile"></i>
+          <span>Buscar</span>
+        </a>
+
+        <a href="create-post.html" class="create-btn">
+          <i class="fa-solid fa-circle-plus create-btn-icon"></i>
+          <span>Crear</span>
+        </a>
+
+        <a href="../index.html">
+          <i class="fa-solid fa-right-from-bracket icon-mobile"></i>
+          <span>Cerrar sesión</span>
+        </a>
+        <a href="profile.html">
+          <i class="fa-regular fa-user icon-mobile"></i>
+          <span>Perfil</span>
+        </a>
+      </aside>
+      <main class="main-content main-content-feed">
+        <!-- Profile Header -->
+        <section class="profile-header">
+          <div class="banner">
+            <img
+              src="../img/placeholder-img.png"
+              alt="imagen de portada del usuario"
+            />
+          </div>
+
+          <div class="profile-info-container">
+            <div class="profile-avatar">
+              <img
+                src="../img/avatar.pinta1111.png"
+                alt="Foto de perfil del usuario"
+              />
+            </div>
+
+            <div class="profile-data">
+              <h2>Miguel el Anashe</h2>
+
+              <p class="descripcion">
+                Descripción Descripción Descripción Descripción Descripción
+                Descripción
+              </p>
+
+              <div class="profile-extra">
+                <p><i class="fa-solid fa-location-dot"></i> Argentina</p>
+                <p><i class="fa-solid fa-calendar"></i> Se unió en mayo 2010</p>
+              </div>
+
+              <div class="stats">
+                <div class="stat">
+                  <h3>30</h3>
+                  <p>Publicaciones</p>
+                </div>
+
+                <div class="stat">
+                  <h3>400</h3>
+                  <p>Seguidores</p>
+                </div>
+
+                <div class="stat">
+                  <h3>50</h3>
+                  <p>Siguiendo</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-buttons">
+              <button class="button-profile btn-editar-perfil">
+                Editar Perfil
+              </button>
+              <a href="create-post.html" class="button-profile btn-crear-post"
+                >Crear Post</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- User Post -->
+        <article class="feed-article">
+          <div class="feed-post-top">
+            <div class="post-user-left">
+              <img src="../img/avatar.pinta1111.png" alt="imagen de Usuario" />
+              <h2>Abdias</h2>
+            </div>
+            <div class="post-user-right">
+              <div class="dropdown">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+          <div class="feed-post-middle">
+            <h2>Rebentando botcitos</h2>
+            <p>
+              Aguante Graves!! Aguante Graves!! Aguante Graves!! Aguante
+              Graves!! Aguante Graves!!
+            </p>
+            <img src="../img/placeholder-img.png" alt="Publicación" />
+          </div>
+
+          <div class="feed-post-bottom">
+            <div class="feed-post-bottom-reactions">
+              <button aria-label="Me gusta">
+                <i class="fa-solid fa-thumbs-up"></i> 1
+              </button>
+              <button aria-label="No me gusta">
+                <i class="fa-solid fa-thumbs-down"></i> 2
+              </button>
+              <button aria-label="Comentar">
+                <i class="fa-solid fa-comment"></i> 4
+              </button>
+            </div>
+            <h3 class="game-name">League of Legends</h3>
+          </div>
+        </article>
+      </main>
+
+      <footer class="main-footer main-footer-feed">
+        <p>
+          <a href="https://opensource.org/license/MIT"
+            >Pinta, Inc ⓒ 2026 MIT License</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="../js/mode.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+Se hace la clases
+
+y los distintos get post
+en donde crear la pagina
+
+
+Un repositorio por cada controller
+dentro de ese repositorio tantas funciones como funciones que tenga el controller
+y tantas clases como devuelva las funciones de los repositorios.
